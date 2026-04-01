@@ -2,6 +2,8 @@
 
 基于毛泽东思想方法论的 AI Agent 辩证分析能力增强。
 
+[English](README_EN.md)
+
 ## 安装
 
 使用 [Skills CLI](https://github.com/vercel-labs/skills) 安装：
