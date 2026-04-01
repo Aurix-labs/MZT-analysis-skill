@@ -1,6 +1,7 @@
 # MZT - Mao Zedong Thought Dialectical Analysis Skill
 
 [中文文档](README.md)
+
 **A single spark can start a prairie fire.**
 **Empower AI with dialectical thinking.**
 

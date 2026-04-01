@@ -1,6 +1,7 @@
 # MZT - Mao Zedong Thought 毛泽东思想辩证分析 Skill
 
 [English](README_EN.md)
+
 **星星之火，可以燎原。**
 **让 AI 掌握辩证思维的利器。**
 
