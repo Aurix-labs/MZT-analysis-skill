@@ -4,96 +4,22 @@ An AI Agent skill based on Mao Zedong Thought methodology, enhancing dialectical
 
 [中文文档](README.md)
 
-## Installation
+## Project Mission
 
-Install using [Skills CLI](https://github.com/vercel-labs/skills):
+**A single spark can start a prairie fire.**
 
-```bash
-# Install to current project
-npx skills add Aurix-labs/MZT
+The core mission of this project is to:
 
-# Global install for Claude Code
-npx skills add Aurix-labs/MZT -g -a claude-code
+1. **Spread Revolutionary Spirit**: Systematize the stance, viewpoints, and methods of Mao Zedong Thought for broader learning and application
+2. **Assist Dialectical Thinking**: Provide a systematic analytical framework to help users cultivate dialectical thinking abilities
+3. **Open Source Sharing**: As an open-source project, spread revolutionary thought widely to influence more people
 
-# Global install for Cursor
-npx skills add Aurix-labs/MZT -g -a cursor
+**Important Notes**:
+- This tool provides **ways of thinking**, not fixed formulas
+- Users should maintain **critical thinking** and avoid dogmatic application
+- The application of methodologies requires combining with specific situations—**concrete analysis of concrete problems**
 
-# Install to all supported agents
-npx skills add Aurix-labs/MZT -g --all
-```
-
-## Usage
-
-### Commands
-
-| Command | Description |
-|---------|-------------|
-| `/mzt` | Explicit analysis — Enter guided dialogue, output structured report |
-| `/mzt-on` | Enable dialectical thinking mode — Agent automatically applies dialectical methods |
-| `/mzt-off` | Disable dialectical thinking mode — Restore default thinking |
-
-### Example
-
-**Explicit invocation**:
-```
-User: /mzt I'm considering whether to join a startup company
-
-Agent: Let me help you analyze this career decision...
-
-[Enter guided dialogue, collect information, output structured report]
-```
-
-**Enable dialectical thinking mode**:
-```
-User: /mzt-on
-
-Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought methodologies in my reasoning process.
-```
-
-## Methodology System
-
-MZT contains 16 methodologies organized in three layers:
-
-### Foundation Layer
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Contradiction Analysis | Primary vs secondary contradictions | Problem decomposition, prioritization |
-| Seek Truth from Facts | Start from reality, oppose subjectivism | Diagnosis, evaluation |
-| Practice Cycle | Perception → Reasoning → Practice testing | Validation, iteration |
-| Development Dialectics | Small-to-large transformation, long-term vision | Trend assessment, potential evaluation |
-
-### Diagnosis Layer
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Class Stance Analysis | Interests determine positions | Stakeholder analysis, negotiation |
-| Investigation Research | No investigation, no right to speak | Information gathering, diagnosis |
-| Thought Correction | Identify → Analyze → Correct | Problem diagnosis, team building |
-| Contradiction Classification | Enemy vs internal contradictions | Conflict resolution, classification |
-
-### Execution Layer
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Strategic Dialectics | Strong-weak transformation, protracted war | Long-term planning, competitive strategy |
-| Flexible Strategy | Preserve self, defeat enemy | Resource-constrained scenarios |
-| Focus Breakthrough | Concentrate resources, key breakthrough | Resource allocation, prioritization |
-| Overall Coordination | Balance ten major relationships | System design, resource balancing |
-| Mass Line | From the masses, to the masses | Requirement analysis, user research |
-| Organizational Discipline | Principles over personal relations | Team collaboration, culture building |
-| Persistence | Firm belief, sustained effort | Long-term goals, difficult tasks |
-| Purpose Orientation | Fundamental purpose, value guidance | Mission, vision, meaning |
-
-## Structured Report Sections
-
-When explicitly invoked (`/mzt`), the output includes:
-
-1. **Problem Definition** — Core issue to be resolved
-2. **Contradiction Analysis** — Primary and secondary contradictions
-3. **Objective Conditions** — Current environment and constraints
-4. **Solutions** — Proposed solutions based on analysis
-5. **Practice Verification** — How to validate and iterate solutions
+---
 
 ## Classic Quotes from Mao Zedong
 
@@ -153,6 +79,158 @@ When explicitly invoked (`/mzt`), the output includes:
 
 > To die for the people's interests is weightier than Mount Tai; to die for the fascists and for the exploiters and oppressors of the people is lighter than a feather.
 
+### On Independent Self-Reliance
+
+> We hope for foreign aid, but we cannot depend on it; we rely on our own efforts, on the creative power of the whole army and the entire people.
+
+> Self-reliance as the main factor, foreign aid as supplementary.
+
+### On United Front
+
+> Politics means making as many people as possible support us and as few people as possible oppose us.
+
+> In the united front, struggle is the means to unity, and unity is the purpose of struggle.
+
+---
+
+## Installation
+
+Install using [Skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+# Install to current project
+npx skills add Aurix-labs/MZT
+
+# Global install for Claude Code
+npx skills add Aurix-labs/MZT -g -a claude-code
+
+# Global install for Cursor
+npx skills add Aurix-labs/MZT -g -a cursor
+
+# Install to all supported agents
+npx skills add Aurix-labs/MZT -g --all
+```
+
+## Usage
+
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `/mzt` | Explicit analysis — Enter guided dialogue, output structured report |
+| `/mzt-on` | Enable dialectical thinking mode — Agent automatically applies dialectical methods |
+| `/mzt-off` | Disable dialectical thinking mode — Restore default thinking |
+
+### Example
+
+**Explicit invocation**:
+```
+User: /mzt I'm considering whether to join a startup company
+
+Agent: Let me help you analyze this career decision...
+
+[Enter guided dialogue, collect information, output structured report]
+```
+
+**Enable dialectical thinking mode**:
+```
+User: /mzt-on
+
+Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought methodologies in my reasoning process.
+```
+
+---
+
+## Methodology System
+
+MZT contains **21 methodologies** organized in five layers, embodying the dialectical unity of "Dao—Shu—Fa—Qi—Ben" (Way—Technique—Method—Tool—Foundation).
+
+### Foundation Layer (Dao)
+
+The foundation of worldview and methodology, the prerequisite for all analysis.
+
+| Methodology | Core Principle | Use Case |
+|-------------|----------------|----------|
+| Seek Truth from Facts | Start from reality, oppose subjectivism | Prerequisite for all analysis |
+| Contradiction Analysis | Primary vs secondary contradictions | Problem identification, prioritization |
+| Concrete Analysis of Concrete Problems | Different contradictions require different methods | Avoid dogmatism |
+
+### Diagnosis Layer (Shu)
+
+For analyzing problems, diagnosing situations, and identifying key factors.
+
+| Methodology | Core Principle | Use Case |
+|-------------|----------------|----------|
+| Class Stance Analysis | Interests determine positions | Stakeholder analysis |
+| Investigation Research | No investigation, no right to speak | Information gathering, diagnosis |
+| Thought Correction | Identify → Analyze → Correct | Problem diagnosis, team building |
+| Contradiction Classification | Enemy vs internal contradictions | Conflict resolution, classification |
+
+### Strategic Planning Layer (Fa)
+
+Formulating strategies, planning directions, grasping the overall situation.
+
+| Methodology | Core Principle | Use Case |
+|-------------|----------------|----------|
+| **Independent Self-Reliance** | Take destiny into your own hands | Strategic base building, core capability development |
+| **United Front** | Unite the majority, isolate the minority | Build alliances, gain support |
+| Strategic Dialectics | Strong-weak transformation, protracted war | Long-term planning, competitive strategy |
+| **Strategic Contempt, Tactical Seriousness** | Strategic confidence and tactical prudence | Mindset adjustment, risk control |
+| Development Dialectics | Small-to-large transformation, long-term vision | Trend assessment, potential evaluation |
+
+### Execution Layer (Qi)
+
+Specific execution, implementation, iterative improvement.
+
+| Methodology | Core Principle | Use Case |
+|-------------|----------------|----------|
+| Focus Breakthrough | Concentrate resources, key breakthrough | Resource allocation, prioritization |
+| Flexible Strategy | Preserve self, defeat enemy | Resource-constrained scenarios |
+| Overall Coordination | Balance ten major relationships | System design, resource balancing |
+| **Criticism and Self-Criticism** | Unity—criticism—unity | Self-iteration, continuous improvement |
+| Practice Cycle | Perception → Reasoning → Practice testing | Validation, iteration |
+
+### Foundation Assurance Layer (Ben)
+
+Fundamental purpose, value orientation, organizational assurance.
+
+| Methodology | Core Principle | Use Case |
+|-------------|----------------|----------|
+| Mass Line | From the masses, to the masses | Requirement analysis, user research |
+| Purpose Orientation | Fundamental purpose, value guidance | Mission, vision, meaning |
+| Persistence | Firm belief, sustained effort | Long-term goals, difficult tasks |
+| Organizational Discipline | Principles over personal relations | Team collaboration, culture building |
+
+> **Note**: Bold indicates new methodologies in this version
+
+---
+
+## Dialectical Relationships Between Methodologies
+
+Methodologies are not isolated; they exist in dialectical unity of opposites:
+
+| Methodology A | Relationship | Methodology B | Description |
+|---------------|--------------|---------------|-------------|
+| Focus Breakthrough | ↔ | Overall Coordination | Dialectical unity of concentration and distribution |
+| Independent Self-Reliance | ↔ | United Front | Dialectical unity of self-preservation and uniting others |
+| Strategic Contempt | ↔ | Tactical Seriousness | Dialectical unity of confidence and prudence |
+| Criticism | ↔ | Self-Criticism | Dialectical unity of external and internal |
+| Seek Truth from Facts | ↔ | Contradiction Analysis | Unity of objectivity and dialectics |
+
+---
+
+## Structured Report Sections
+
+When explicitly invoked (`/mzt`), the output includes:
+
+1. **Problem Definition** — Core issue to be resolved
+2. **Contradiction Analysis** — Primary and secondary contradictions
+3. **Objective Conditions** — Current environment and constraints
+4. **Solutions** — Proposed solutions based on analysis
+5. **Practice Verification** — How to validate and iterate solutions
+
+---
+
 ## Supported Agents
 
 Through Skills CLI, MZT supports 44+ AI agents including:
@@ -166,12 +244,20 @@ Through Skills CLI, MZT supports 44+ AI agents including:
 - Goose
 - And more
 
+---
+
 ## References
 
 - [Selected Works of Mao Zedong](https://www.marxists.org/chinese/maozedong/index.htm)
 - [Agent Skills Specification](https://agentskills.io)
 - [Skills CLI](https://github.com/vercel-labs/skills)
 
+---
+
 ## License
 
 MIT
+
+---
+
+**Let a single spark start a prairie fire across the world!**
