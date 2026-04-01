@@ -1,6 +1,16 @@
 # MZT - Mao Zedong Thought Dialectical Analysis Skill
 
-An AI Agent skill based on Mao Zedong Thought methodology, enhancing dialectical thinking and decision-making capabilities.
+**Empower AI with dialectical thinking.**
+
+MZT systematizes 21 core methodologies from Mao Zedong's Selected Works into capabilities that AI Agents can apply. When facing complex problems, AI can:
+
+- **Identify principal contradictions** and grasp the key to problems
+- **Seek truth from facts** and analyze based on actual conditions
+- **Discern stances** and understand the demands of stakeholders
+- **Formulate strategies** with independent self-reliance, united front, and focused breakthrough
+- **Iterate continuously** and validate through practice
+
+**This is not a simple prompt template, but a complete dialectical thinking system.**
 
 [中文文档](README.md)
 
