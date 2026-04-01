@@ -3,7 +3,8 @@
 [中文文档](README.md)
 
 **A single spark can start a prairie fire.**
-**Empower AI with dialectical thinking.**
+
+**MZT-analysis-skill — Empower AI with dialectical thinking.**
 
 MZT systematizes 21 core methodologies from Mao Zedong's Selected Works into capabilities that AI Agents can apply. When facing complex problems, AI can:
 
@@ -155,11 +156,11 @@ Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought method
 
 ## Methodology System
 
-MZT contains **21 methodologies** organized in five layers, embodying the dialectical unity of "Dao—Shu—Fa—Qi—Ben" (Way—Technique—Method—Tool—Foundation).
+MZT contains **21 methodologies** organized in five layers, forming a complete thinking framework.
 
-### Foundation Layer (Dao)
+### Layer 1: Philosophy
 
-The foundation of worldview and methodology, the prerequisite for all analysis.
+**Worldview Foundation — The prerequisite for all analysis**
 
 | Methodology | Core Principle | Use Case |
 |-------------|----------------|----------|
@@ -167,9 +168,9 @@ The foundation of worldview and methodology, the prerequisite for all analysis.
 | Contradiction Analysis | Primary vs secondary contradictions | Problem identification, prioritization |
 | Concrete Analysis of Concrete Problems | Different contradictions require different methods | Avoid dogmatism |
 
-### Diagnosis Layer (Shu)
+### Layer 2: Analysis
 
-For analyzing problems, diagnosing situations, and identifying key factors.
+**Problem Diagnosis — Identifying key factors**
 
 | Methodology | Core Principle | Use Case |
 |-------------|----------------|----------|
@@ -178,9 +179,9 @@ For analyzing problems, diagnosing situations, and identifying key factors.
 | Thought Correction | Identify → Analyze → Correct | Problem diagnosis, team building |
 | Contradiction Classification | Enemy vs internal contradictions | Conflict resolution, classification |
 
-### Strategic Planning Layer (Fa)
+### Layer 3: Strategy
 
-Formulating strategies, planning directions, grasping the overall situation.
+**Direction Planning — Grasping the overall situation**
 
 | Methodology | Core Principle | Use Case |
 |-------------|----------------|----------|
@@ -190,9 +191,9 @@ Formulating strategies, planning directions, grasping the overall situation.
 | **Strategic Contempt, Tactical Seriousness** | Strategic confidence and tactical prudence | Mindset adjustment, risk control |
 | Development Dialectics | Small-to-large transformation, long-term vision | Trend assessment, potential evaluation |
 
-### Execution Layer (Qi)
+### Layer 4: Execution
 
-Specific execution, implementation, iterative improvement.
+**Implementation — Specific operations and iteration**
 
 | Methodology | Core Principle | Use Case |
 |-------------|----------------|----------|
@@ -202,9 +203,9 @@ Specific execution, implementation, iterative improvement.
 | **Criticism and Self-Criticism** | Unity—criticism—unity | Self-iteration, continuous improvement |
 | Practice Cycle | Perception → Reasoning → Practice testing | Validation, iteration |
 
-### Foundation Assurance Layer (Ben)
+### Layer 5: Foundation
 
-Fundamental purpose, value orientation, organizational assurance.
+**Value Base — Fundamental purpose and beliefs**
 
 | Methodology | Core Principle | Use Case |
 |-------------|----------------|----------|
@@ -240,21 +241,6 @@ When explicitly invoked (`/mzt`), the output includes:
 3. **Objective Conditions** — Current environment and constraints
 4. **Solutions** — Proposed solutions based on analysis
 5. **Practice Verification** — How to validate and iterate solutions
-
----
-
-## Supported Agents
-
-Through Skills CLI, MZT supports 44+ AI agents including:
-
-- Claude Code
-- Cursor
-- OpenClaw
-- Codex
-- Windsurf
-- Cline
-- Goose
-- And more
 
 ---
 
