@@ -1,4 +1,4 @@
-# MZT - 毛泽东思想辩证分析 Skill
+# MZT - Mao Zedong Thought 毛泽东思想辩证分析 Skill
 
 **让 AI 掌握辩证思维的利器。**
 
