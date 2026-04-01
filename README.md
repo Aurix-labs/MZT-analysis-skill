@@ -124,6 +124,21 @@ npx skills add Aurix-labs/MZT-analysis-skill -g -a cursor
 npx skills add Aurix-labs/MZT-analysis-skill -g --all
 ```
 
+### 项目结构
+
+```
+MZT/
+├── mzt/                    # /mzt 主命令
+│   ├── SKILL.md
+│   └── methodologies/      # 21个方法论
+├── mzt-on/SKILL.md         # /mzt-on 开启辩证模式
+├── mzt-off/SKILL.md        # /mzt-off 关闭辩证模式
+├── README.md
+└── README_EN.md
+```
+
+安装后将获得三个可用指令：`/mzt`、`/mzt-on`、`/mzt-off`
+
 ## 使用方法
 
 ### 指令

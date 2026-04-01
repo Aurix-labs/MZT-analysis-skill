@@ -124,6 +124,21 @@ npx skills add Aurix-labs/MZT-analysis-skill -g -a cursor
 npx skills add Aurix-labs/MZT-analysis-skill -g --all
 ```
 
+### Project Structure
+
+```
+MZT/
+├── mzt/                    # /mzt main command
+│   ├── SKILL.md
+│   └── methodologies/      # 21 methodologies
+├── mzt-on/SKILL.md         # /mzt-on enable dialectical mode
+├── mzt-off/SKILL.md        # /mzt-off disable dialectical mode
+├── README.md
+└── README_EN.md
+```
+
+After installation, three commands will be available: `/mzt`, `/mzt-on`, `/mzt-off`
+
 ## Usage
 
 ### Commands
