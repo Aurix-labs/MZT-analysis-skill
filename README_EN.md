@@ -112,16 +112,16 @@ Install using [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
 # Install to current project
-npx skills add Aurix-labs/MZT
+npx skills add Aurix-labs/MZT-analysis-skill
 
 # Global install for Claude Code
-npx skills add Aurix-labs/MZT -g -a claude-code
+npx skills add Aurix-labs/MZT-analysis-skill -g -a claude-code
 
 # Global install for Cursor
-npx skills add Aurix-labs/MZT -g -a cursor
+npx skills add Aurix-labs/MZT-analysis-skill -g -a cursor
 
 # Install to all supported agents
-npx skills add Aurix-labs/MZT -g --all
+npx skills add Aurix-labs/MZT-analysis-skill -g --all
 ```
 
 ## Usage
