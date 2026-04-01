@@ -1,5 +1,7 @@
 # MZT - Mao Zedong Thought Dialectical Analysis Skill
 
+[中文文档](README.md)
+**A single spark can start a prairie fire.**
 **Empower AI with dialectical thinking.**
 
 MZT systematizes 21 core methodologies from Mao Zedong's Selected Works into capabilities that AI Agents can apply. When facing complex problems, AI can:
@@ -12,22 +14,21 @@ MZT systematizes 21 core methodologies from Mao Zedong's Selected Works into cap
 
 **This is not a simple prompt template, but a complete dialectical thinking system.**
 
-[中文文档](README.md)
 
 ## Project Mission
 
-**A single spark can start a prairie fire.**
+This project focuses on distilling and spreading thinking methodologies, without involving any political stance. We believe that excellent wisdom belongs to all humanity and should be inherited and developed.
 
-The core mission of this project is to:
+**Core Objectives**:
 
-1. **Spread Revolutionary Spirit**: Systematize the stance, viewpoints, and methods of Mao Zedong Thought for broader learning and application
-2. **Assist Dialectical Thinking**: Provide a systematic analytical framework to help users cultivate dialectical thinking abilities
-3. **Open Source Sharing**: As an open-source project, spread revolutionary thought widely to influence more people
+1. **Wisdom Inheritance**: Systematize thinking methods tested by practice, enabling more people to learn and apply them
+2. **Thinking Enhancement**: Provide systematic analytical frameworks to help users cultivate deep thinking and dialectical analysis abilities
+3. **Open Source Sharing**: As an open-source project, spread excellent methodologies widely to promote knowledge accessibility
 
-**Important Notes**:
-- This tool provides **ways of thinking**, not fixed formulas
-- Users should maintain **critical thinking** and avoid dogmatic application
-- The application of methodologies requires combining with specific situations—**concrete analysis of concrete problems**
+**Guiding Principles**:
+- This tool provides **thinking frameworks**, not fixed formulas
+- Users should maintain **critical thinking** and apply flexibly to actual situations
+- The value of methodology lies in practice—follow the principle of **concrete analysis of concrete problems**
 
 ---
 
