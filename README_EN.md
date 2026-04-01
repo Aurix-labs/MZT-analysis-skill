@@ -114,7 +114,7 @@ Install using [Skills CLI](https://github.com/vercel-labs/skills):
 # Install to current project
 npx skills add Aurix-labs/MZT-analysis-skill
 
-# Global install for Claude Code
+# Global install for Claude Code (recommended)
 npx skills add Aurix-labs/MZT-analysis-skill -g -a claude-code
 
 # Global install for Cursor
@@ -128,16 +128,14 @@ npx skills add Aurix-labs/MZT-analysis-skill -g --all
 
 ```
 MZT/
-├── mzt/                    # /mzt main command
+├── mzt/                    # /mzt command
 │   ├── SKILL.md
 │   └── methodologies/      # 21 methodologies
-├── mzt-on/SKILL.md         # /mzt-on enable dialectical mode
-├── mzt-off/SKILL.md        # /mzt-off disable dialectical mode
 ├── README.md
 └── README_EN.md
 ```
 
-After installation, three commands will be available: `/mzt`, `/mzt-on`, `/mzt-off`
+Available commands after installation: `/mzt`, `/mzt on`, `/mzt off`
 
 ## Usage
 
@@ -146,8 +144,8 @@ After installation, three commands will be available: `/mzt`, `/mzt-on`, `/mzt-o
 | Command | Description |
 |---------|-------------|
 | `/mzt` | Explicit analysis — Enter guided dialogue, output structured report |
-| `/mzt-on` | Enable dialectical thinking mode — Agent automatically applies dialectical methods |
-| `/mzt-off` | Disable dialectical thinking mode — Restore default thinking |
+| `/mzt on` | Enable dialectical thinking mode — Agent automatically applies dialectical methods |
+| `/mzt off` | Disable dialectical thinking mode — Restore default thinking |
 
 ### Example
 
@@ -162,7 +160,7 @@ Agent: Let me help you analyze this career decision...
 
 **Enable dialectical thinking mode**:
 ```
-User: /mzt-on
+User: /mzt on
 
 Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought methodologies in my reasoning process.
 ```
