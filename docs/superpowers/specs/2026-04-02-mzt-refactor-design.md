@@ -32,7 +32,7 @@
 └── 调查研究法 ← 从分析层提升
 
 第二层：认识层（认知方法）← 新增层级
-├── 认识循环法
+├── 认识循环法 ← 从执行层调整
 ├── 主观能动性法 ← 新增
 └── 批评与自我批评法 ← 从执行层调整
 
@@ -232,10 +232,11 @@ mzt/
 | 文件 | 修改内容 |
 |------|----------|
 | `SKILL.md` | 重构层级架构，更新方法论列表，补充辩证关系 |
+| `methodologies/03-practice-cycle.md` | 调整层级归属（执行层→认识层） |
 | `methodologies/06-investigation-research.md` | 调整层级归属（分析层→哲学层） |
 | `methodologies/13-mass-line.md` | 补充来源《关于领导方法的若干问题》 |
-| `methodologies/17-independent-self-reliance.md` | 补充来源《统一战线中的独立自主问题》 |
 | `methodologies/15-persistence.md` | 调整层级归属（保障层→执行层） |
+| `methodologies/17-independent-self-reliance.md` | 补充来源《统一战线中的独立自主问题》 |
 | `methodologies/19-criticism-self-criticism.md` | 调整层级归属（执行层→认识层） |
 
 ### 7.3 实施顺序
