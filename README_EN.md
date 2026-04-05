@@ -6,7 +6,7 @@
 
 **MZT-analysis-skill — Empower AI with dialectical thinking.**
 
-MZT systematizes 21 core methodologies from Mao Zedong's Selected Works into capabilities that AI Agents can apply. When facing complex problems, AI can:
+MZT systematizes **23** core methodologies from Mao Zedong's Selected Works into capabilities that AI Agents can apply. When facing complex problems, AI can:
 
 - **Identify principal contradictions** and grasp the key to problems
 - **Seek truth from facts** and analyze based on actual conditions
@@ -130,7 +130,7 @@ npx skills add Aurix-labs/MZT-analysis-skill -g --all
 MZT/
 ├── mzt/                    # /mzt command
 │   ├── SKILL.md
-│   └── methodologies/      # 21 methodologies
+│   └── methodologies/      # 23 methodologies
 ├── README.md
 └── README_EN.md
 ```
@@ -169,7 +169,7 @@ Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought method
 
 ## Methodology System
 
-MZT contains **21 methodologies** organized in five layers, forming a complete thinking framework.
+MZT contains **23 methodologies** organized in six layers, forming a complete thinking framework.
 
 ### Layer 1: Philosophy
 
@@ -249,11 +249,25 @@ Methodologies are not isolated; they exist in dialectical unity of opposites:
 
 When explicitly invoked (`/mzt`), the output includes:
 
-1. **Problem Definition** — Core issue to be resolved
-2. **Contradiction Analysis** — Primary and secondary contradictions
-3. **Objective Conditions** — Current environment and constraints
-4. **Solutions** — Proposed solutions based on analysis
-5. **Practice Verification** — How to validate and iterate solutions
+1. **Problem Definition** — Core issue to be resolved (focused, precise)
+2. **Evidence Base** — Data sources, investigation process, reliability (required)
+3. **Contradiction Analysis** — Primary/secondary contradictions, transformation conditions
+4. **Objective Conditions** — Current environment and constraints
+5. **Solutions** — Proposed solutions based on analysis
+6. **Practice Verification** — How to validate and iterate solutions
+7. **Critical Reflection** — Self-questioning, limitations, improvement directions (required)
+
+### Methodology Selection Guide
+
+Choose methodology combinations based on problem type:
+
+| Problem Type | Required Methodologies | Optional Methodologies |
+|--------------|------------------------|------------------------|
+| Historical Events | Contradiction Analysis + Development Dialectics | Class Stance, Mass Line |
+| International Relations | Contradiction Analysis + Strategic Dialectics | United Front, Independent Self-Reliance |
+| Technology Development | Contradiction Analysis + Development Dialectics | Mass Line, Seek Truth from Facts |
+| Social Issues | Contradiction Analysis + Class Stance | Mass Line, Independent Self-Reliance |
+| Career Decisions | Contradiction Analysis + Independent Self-Reliance | Development Dialectics, Seek Truth from Facts |
 
 ---
 
