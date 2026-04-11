@@ -34,6 +34,31 @@ This project focuses on distilling and spreading thinking methodologies, without
 
 ---
 
+## Core Features
+
+### Four-Capability Architecture
+
+MZT adopts a **capability-driven** architecture rather than traditional process design:
+
+| Capability | Core Objective |
+|------------|----------------|
+| **Problem Construction** | Discover core contradictions, not fill checklists |
+| **Methodology Selection** | Dynamic selection, not preset mapping |
+| **Self-Reflection** | Critical thinking throughout the process |
+| **Verification & Iteration** | Practice testing, forming closed loops |
+
+### Architecture Comparison
+
+| Dimension | Old Architecture (Process Design) | New Architecture (Capability Design) |
+|-----------|-----------------------------------|--------------------------------------|
+| Entry Point | Problem type identification (10 presets) | Problem feature identification (8 dynamic dimensions) |
+| Questioning Purpose | Fill clarity checklist | Discover core contradictions |
+| Methodology | Static layering + preset mapping | Dynamic priority + on-demand selection |
+| Quality Check | Agent self-evaluation | Agent self-evaluation + User evaluation |
+| Closed Loop | None | User feedback → Pattern extraction → Knowledge crystallization |
+
+---
+
 ## Classic Quotes from Mao Zedong
 
 ### On Contradiction Analysis
@@ -129,8 +154,14 @@ npx skills add Aurix-labs/MZT-analysis-skill -g --all
 ```
 MZT/
 ├── mzt/                    # /mzt command
-│   ├── SKILL.md
-│   └── methodologies/      # 23 methodologies
+│   ├── SKILL.md            # Core skill file
+│   ├── methodologies/      # 23 methodology files
+│   ├── configs/            # Configuration files
+│   │   ├── feature-mapping.yaml  # Problem feature-methodology mapping
+│   │   └── case-template.md      # Case record template
+│   ├── cases/              # Case library
+│   │   └── INDEX.md        # Case index
+│   └── README.md
 ├── README.md
 └── README_EN.md
 ```
@@ -143,9 +174,9 @@ Available commands after installation: `/mzt`, `/mzt on`, `/mzt off`
 
 | Command | Description |
 |---------|-------------|
-| `/mzt` | Explicit analysis — Enter guided dialogue, output structured report |
-| `/mzt on` | Enable dialectical thinking mode — Agent automatically applies dialectical methods |
-| `/mzt off` | Disable dialectical thinking mode — Restore default thinking |
+| `/mzt` | Explicit analysis — Enter capability-driven analysis flow, output structured report |
+| `/mzt on` | Enable dialectical thinking mode |
+| `/mzt off` | Disable dialectical thinking mode |
 
 ### Example
 
@@ -169,65 +200,13 @@ Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought method
 
 ## Methodology System
 
-MZT contains **23 methodologies** organized in six layers, forming a complete thinking framework.
+MZT contains **23 methodologies** organized in a three-layer architecture:
 
-### Layer 1: Philosophy
+1. **Core Methodologies**: Contradiction Analysis, Seek Truth from Facts (one required for all analysis)
+2. **Feature-Based Recommendations**: Dynamic selection based on problem features
+3. **Auxiliary Methodologies**: On-demand invocation
 
-**Worldview Foundation — The prerequisite for all analysis**
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Seek Truth from Facts | Start from reality, oppose subjectivism | Prerequisite for all analysis |
-| Contradiction Analysis | Primary vs secondary contradictions | Problem identification, prioritization |
-| Concrete Analysis of Concrete Problems | Different contradictions require different methods | Avoid dogmatism |
-
-### Layer 2: Analysis
-
-**Problem Diagnosis — Identifying key factors**
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Class Stance Analysis | Interests determine positions | Stakeholder analysis |
-| Investigation Research | No investigation, no right to speak | Information gathering, diagnosis |
-| Thought Correction | Identify → Analyze → Correct | Problem diagnosis, team building |
-| Contradiction Classification | Enemy vs internal contradictions | Conflict resolution, classification |
-
-### Layer 3: Strategy
-
-**Direction Planning — Grasping the overall situation**
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| **Independent Self-Reliance** | Take destiny into your own hands | Strategic base building, core capability development |
-| **United Front** | Unite the majority, isolate the minority | Build alliances, gain support |
-| Strategic Dialectics | Strong-weak transformation, protracted war | Long-term planning, competitive strategy |
-| **Strategic Contempt, Tactical Seriousness** | Strategic confidence and tactical prudence | Mindset adjustment, risk control |
-| Development Dialectics | Small-to-large transformation, long-term vision | Trend assessment, potential evaluation |
-
-### Layer 4: Execution
-
-**Implementation — Specific operations and iteration**
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Focus Breakthrough | Concentrate resources, key breakthrough | Resource allocation, prioritization |
-| Flexible Strategy | Preserve self, defeat enemy | Resource-constrained scenarios |
-| Overall Coordination | Balance ten major relationships | System design, resource balancing |
-| **Criticism and Self-Criticism** | Unity—criticism—unity | Self-iteration, continuous improvement |
-| Practice Cycle | Perception → Reasoning → Practice testing | Validation, iteration |
-
-### Layer 5: Foundation
-
-**Value Base — Fundamental purpose and beliefs**
-
-| Methodology | Core Principle | Use Case |
-|-------------|----------------|----------|
-| Mass Line | From the masses, to the masses | Requirement analysis, user research |
-| Purpose Orientation | Fundamental purpose, value guidance | Mission, vision, meaning |
-| Persistence | Firm belief, sustained effort | Long-term goals, difficult tasks |
-| Organizational Discipline | Principles over personal relations | Team collaboration, culture building |
-
-> **Note**: Bold indicates new methodologies in this version
+For detailed methodology list, see [SKILL.md](mzt/SKILL.md).
 
 ---
 
