@@ -337,74 +337,116 @@ MZT 采用**能力驱动**架构，包含四个核心能力模块：
 
 ---
 
+## 报告结构
+
+### 七章节结构
+
+| 章节 | 状态 | 说明 |
+|------|------|------|
+| 一、问题定义 | 必选 | 收敛精准，附问题特征 |
+| 二、事实依据 | 必选 | 数据来源、可靠性、信息缺口 |
+| 三、矛盾分析 | 必选 | 核心矛盾、转化条件 |
+| 四、客观条件 | 必选 | 环境和约束 |
+| 五、解决方案 | 必选 | 可执行的建议 |
+| 六、实践检验 | 必选 | 可验证假设、验证方法 |
+| 七、批判性反思 | 必选 | 核心假设、可能反驳、局限 |
+
+### 事实依据章节模板
+
+```markdown
+## 二、事实依据
+
+### 数据来源
+
+| 来源类型 | 具体来源 | 链接/出处 |
+|----------|----------|----------|
+| 官方数据 | ? | ? |
+| 研究报告 | ? | ? |
+| 新闻报道 | ? | ? |
+| 专家观点 | ? | ? |
+
+### 可靠性评估
+
+- [ ] 数据是否来自权威渠道？
+- [ ] 是否存在利益相关方影响？
+- [ ] 是否需要交叉验证？
+
+### 信息缺口
+
+- 哪些关键信息尚未获取？
+- 如何弥补这些缺口？
+```
+
+### 批判性反思章节模板
+
+```markdown
+## 七、批判性反思
+
+### 核心假设
+- 本报告的核心假设是什么？
+- 这些假设是否经得起检验？
+
+### 可能的反驳
+- 有没有其他可能的解释？
+- 反对者会怎么反驳我的结论？
+
+### 局限性
+- 本报告最大的局限是什么？
+- 什么情况下本报告的结论会失效？
+
+### 改进方向
+- 还需要补充哪些信息？
+- 分析还可以从哪些角度深化？
+```
+
+---
+
 ## 方法论体系
 
-MZT 包含 **23 个方法论**，分为六个层级，形成完整的思维闭环。
+MZT 包含 **23 个方法论**，按三层架构组织：
 
-### 第一层：哲学层
+### 第一层：核心方法论
 
-**世界观根基 — 所有分析的前提**
+**所有分析必选其一**
 
-| 方法论 | 核心要点 | 适用场景 |
-|--------|----------|----------|
-| [实事求是法](methodologies/02-seek-truth-from-facts.md) | 从实际出发、反对主观主义 | 所有分析的前提 |
-| [矛盾分析法](methodologies/01-contradiction-analysis.md) | 主要矛盾与次要矛盾 | 问题识别与优先级判断 |
-| [具体问题具体分析法](methodologies/21-concrete-analysis.md) | 不同矛盾用不同方法解决 | 避免教条主义，所有方法论的前提 |
-| [调查研究法](methodologies/06-investigation-research.md) | 没有调查没有发言权 | 认识世界、获取第一手资料 |
+| 方法论 | 核心要点 |
+|--------|----------|
+| [矛盾分析法](methodologies/01-contradiction-analysis.md) | 主要矛盾与次要矛盾 |
+| [实事求是法](methodologies/02-seek-truth-from-facts.md) | 从实际出发、反对主观主义 |
 
-### 第二层：认识层
+### 第二层：按特征推荐
 
-**认知方法 — 获取知识与改进认知**
+**根据问题特征动态选择**
 
-| 方法论 | 核心要点 | 适用场景 |
-|--------|----------|----------|
-| [认识循环法](methodologies/03-practice-cycle.md) | 感性→理性→实践检验 | 方案验证、迭代优化 |
-| [主观能动性法](methodologies/22-subjective-initiative.md) | 在客观条件限度内争取最好 | 资源约束下的突破 |
-| [批评与自我批评法](methodologies/19-criticism-self-criticism.md) | 团结—批评—团结 | 自我迭代、持续改进 |
+参见 [能力二：方法论选择能力](#能力二方法论选择能力) 的"问题特征维度"表格。
 
-### 第三层：分析层
+### 第三层：辅助方法论
 
-**问题诊断 — 识别关键因素**
+**按需调用**
 
-| 方法论 | 核心要点 | 适用场景 |
-|--------|----------|----------|
-| [阶级立场分析法](methodologies/05-class-stance-analysis.md) | 利益决定立场、敌友辨别 | 利益相关方分析、谈判博弈 |
-| [思想纠偏法](methodologies/07-thought-correction.md) | 识别表现→分析根源→纠正 | 问题诊断、团队建设 |
-| [矛盾分类处理法](methodologies/08-contradiction-classification.md) | 敌我矛盾 vs 人民内部矛盾 | 冲突处理、问题分类 |
-
-### 第四层：战略层
-
-**方向规划 — 把握全局态势**
-
-| 方法论 | 核心要点 | 适用场景 |
-|--------|----------|----------|
-| [独立自主法](methodologies/17-independent-self-reliance.md) | 把命运掌握在自己手中 | 战略支点建设、核心能力培养 |
-| [统一战线法](methodologies/18-united-front.md) | 团结多数、孤立少数 | 建立联盟、争取支持 |
-| [战略辩证法](methodologies/09-strategic-dialectics.md) | 强弱转化、持久与速决 | 长期规划、竞争策略 |
-| [战略藐视战术重视法](methodologies/20-strategic-contempt-tactical-seriousness.md) | 战略自信与战术谨慎 | 心态调整、风险控制 |
-| [发展辩证法](methodologies/04-development-dialectics.md) | 小与大的转化、长远眼光 | 判断形势、评估潜力 |
-
-### 第五层：执行层
-
-**落地实施 — 具体操作迭代**
-
-| 方法论 | 核心要点 | 适用场景 |
-|--------|----------|----------|
-| [聚焦突破法](methodologies/11-focus-breakthrough.md) | 集中资源、重点突破 | 资源分配、优先级执行 |
-| [灵活战略法](methodologies/10-flexible-strategy.md) | 保存自己消灭敌人 | 资源有限时的策略选择 |
-| [统筹兼顾法](methodologies/12-overall-coordination.md) | 十大关系的平衡与协调 | 复杂系统设计、资源平衡 |
-| [领导方法法](methodologies/23-leadership-method.md) | 一般与个别、领导与群众 | 团队管理、项目推进 |
-| [持之以恒法](methodologies/15-persistence.md) | 坚定信念、持续努力 | 长期目标、困难任务 |
-
-### 第六层：保障层
-
-**价值根基 — 根本宗旨与信念**
-
-| 方法论 | 核心要点 | 适用场景 |
-|--------|----------|----------|
-| [群众路线法](methodologies/13-mass-line.md) | 从群众中来、到群众中去 | 需求分析、用户研究 |
-| [宗旨导向法](methodologies/16-purpose-orientation.md) | 根本宗旨、价值导向 | 使命愿景、意义建构 |
-| [组织纪律法](methodologies/14-organizational-discipline.md) | 原则性vs人情关系 | 团队协作、组织文化 |
+| 层级 | 方法论 | 核心要点 |
+|------|--------|----------|
+| 哲学层 | [具体问题具体分析法](methodologies/21-concrete-analysis.md) | 不同矛盾用不同方法解决 |
+| 哲学层 | [调查研究法](methodologies/06-investigation-research.md) | 没有调查没有发言权 |
+| 认识层 | [认识循环法](methodologies/03-practice-cycle.md) | 感性→理性→实践检验 |
+| 认识层 | [主观能动性法](methodologies/22-subjective-initiative.md) | 在客观条件限度内争取最好 |
+| 认识层 | [批评与自我批评法](methodologies/19-criticism-self-criticism.md) | 团结—批评—团结 |
+| 分析层 | [阶级立场分析法](methodologies/05-class-stance-analysis.md) | 利益决定立场、敌友辨别 |
+| 分析层 | [思想纠偏法](methodologies/07-thought-correction.md) | 识别表现→分析根源→纠正 |
+| 分析层 | [矛盾分类处理法](methodologies/08-contradiction-classification.md) | 敌我矛盾 vs 人民内部矛盾 |
+| 战略层 | [独立自主法](methodologies/17-independent-self-reliance.md) | 把命运掌握在自己手中 |
+| 战略层 | [统一战线法](methodologies/18-united-front.md) | 团结多数、孤立少数 |
+| 战略层 | [战略辩证法](methodologies/09-strategic-dialectics.md) | 强弱转化、持久与速决 |
+| 战略层 | [战略藐视战术重视法](methodologies/20-strategic-contempt-tactical-seriousness.md) | 战略自信与战术谨慎 |
+| 战略层 | [发展辩证法](methodologies/04-development-dialectics.md) | 小与大的转化、长远眼光 |
+| 执行层 | [聚焦突破法](methodologies/11-focus-breakthrough.md) | 集中资源、重点突破 |
+| 执行层 | [灵活战略法](methodologies/10-flexible-strategy.md) | 保存自己消灭敌人 |
+| 执行层 | [统筹兼顾法](methodologies/12-overall-coordination.md) | 十大关系的平衡与协调 |
+| 执行层 | [领导方法法](methodologies/23-leadership-method.md) | 一般与个别、领导与群众 |
+| 执行层 | [持之以恒法](methodologies/15-persistence.md) | 坚定信念、持续努力 |
+| 保障层 | [群众路线法](methodologies/13-mass-line.md) | 从群众中来、到群众中去 |
+| 保障层 | [宗旨导向法](methodologies/16-purpose-orientation.md) | 根本宗旨、价值导向 |
+| 保障层 | [组织纪律法](methodologies/14-organizational-discipline.md) | 原则性vs人情关系 |
 
 ---
 
