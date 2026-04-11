@@ -1,0 +1,1106 @@
+# MZT Skills 优化实施计划
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** 将 MZT Skills 从"流程设计"架构重构为"四能力架构"，解决形式化、方法论堆砌、缺乏验证机制等核心问题。
+
+**Architecture:** 核心转变是从预设的问题类型映射转变为动态的问题特征识别，从五阶段流程转变为四能力模块，增加苏格拉底式确认和用户反馈闭环机制。
+
+**Tech Stack:** Markdown, YAML, Agent Skills 规范
+
+---
+
+## 文件结构
+
+```
+mzt/
+├── SKILL.md                    # 全面重构（主要工作）
+├── methodologies/              # 保留不变（23个方法论文件）
+├── configs/                    # 新增目录
+│   ├── feature-mapping.yaml    # 问题特征-方法论映射
+│   └── case-template.md        # 案例记录模板
+├── cases/                      # 新增目录（案例库）
+│   └── INDEX.md                # 案例索引
+└── README.md                   # 更新使用说明
+```
+
+---
+
+## Task 1: 创建 configs 目录和配置文件
+
+**Files:**
+- Create: `mzt/configs/feature-mapping.yaml`
+- Create: `mzt/configs/case-template.md`
+
+- [ ] **Step 1: 创建 configs 目录**
+
+```bash
+mkdir -p mzt/configs
+```
+
+- [ ] **Step 2: 创建 feature-mapping.yaml**
+
+```yaml
+# 问题特征-方法论映射配置
+# 用于能力二：方法论选择能力
+
+features:
+  - name: 利益冲突
+    description: 涉及不同群体利益分配、存在对立立场
+    recommended_methods:
+      - 阶级立场分析法
+      - 矛盾分类处理法
+
+  - name: 趋势判断
+    description: 需要分析事物发展方向、判断未来走向
+    recommended_methods:
+      - 发展辩证法
+      - 战略辩证法
+
+  - name: 资源分配
+    description: 涉及有限资源的优先级决策
+    recommended_methods:
+      - 聚焦突破法
+      - 统筹兼顾法
+
+  - name: 人际关系
+    description: 涉及团队、组织、群体关系
+    recommended_methods:
+      - 群众路线法
+      - 统一战线法
+
+  - name: 战略决策
+    description: 涉及长期规划、重大选择
+    recommended_methods:
+      - 战略辩证法
+      - 独立自主法
+      - 灵活战略法
+
+  - name: 实践验证
+    description: 需要将分析结论付诸检验
+    recommended_methods:
+      - 认识循环法
+      - 批评与自我批评法
+
+  - name: 历史视角
+    description: 需要从历史维度理解问题
+    recommended_methods:
+      - 发展辩证法
+      - 调查研究法
+
+  - name: 问题诊断
+    description: 需要识别问题根源
+    recommended_methods:
+      - 思想纠偏法
+      - 矛盾分析法
+
+# 核心方法论（所有分析必选其一）
+core_methods:
+  - 矛盾分析法
+  - 实事求是法
+```
+
+- [ ] **Step 3: 创建 case-template.md**
+
+```markdown
+# 案例记录模板
+
+> 用于知识沉淀和判断模式提炼
+
+## 案例记录
+
+### 问题特征
+- 核心矛盾：[描述]
+- 问题特征维度：[利益冲突/趋势判断/资源分配/人际关系/战略决策/实践验证/历史视角/问题诊断]
+- 特殊性：[本案例独特之处]
+
+### 方法论应用
+- 选择的方法论：[方法论名称]
+- 选择理由：[为什么选择这个方法论]
+- 应用效果：[效果描述]
+
+### 判断模式提炼
+- 当遇到 [特征] 时，优先考虑 [方法论]
+- 注意避免 [常见错误]
+
+### 用户反馈
+- 问题解决程度：[是/部分/否]
+- 建议可执行性：[是/部分/否]
+- 用户补充：[开放回答]
+```
+
+- [ ] **Step 4: 提交 configs 目录**
+
+```bash
+git add mzt/configs/
+git commit -m "feat(mzt): add configs directory with feature-mapping and case-template
+
+- Add feature-mapping.yaml: 8 feature dimensions to methodology mapping
+- Add case-template.md: template for knowledge crystallization
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 2: 创建 cases 目录和索引文件
+
+**Files:**
+- Create: `mzt/cases/INDEX.md`
+
+- [ ] **Step 1: 创建 cases 目录**
+
+```bash
+mkdir -p mzt/cases
+```
+
+- [ ] **Step 2: 创建案例索引文件**
+
+```markdown
+# 案例库索引
+
+> 存储用户评价后的案例记录，用于判断模式提炼
+
+## 使用说明
+
+- 案例文件命名格式：`YYYY-MM-DD-<主题摘要>.md`
+- 案例归档：超过 100 条时，按时间归档到 `archive/` 目录
+- 检索方式：按问题特征维度检索
+
+## 案例目录
+
+| 日期 | 主题 | 核心特征 | 方法论 | 效果 |
+|------|------|----------|--------|------|
+| - | - | - | - | - |
+
+---
+
+*案例库初始化于 2026-04-11*
+```
+
+- [ ] **Step 3: 提交 cases 目录**
+
+```bash
+git add mzt/cases/
+git commit -m "feat(mzt): initialize cases directory for knowledge crystallization
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 3: 重构 SKILL.md - 第一部分：头部和指令
+
+**Files:**
+- Modify: `mzt/SKILL.md`
+
+- [ ] **Step 1: 重写 SKILL.md 头部和项目定位**
+
+将现有内容替换为新的架构说明。保留 YAML frontmatter，重写项目定位部分。
+
+```markdown
+---
+name: mzt
+description: 毛泽东思想辩证分析 Skill，提升 Agent 思考深度和决策能力
+---
+
+# 毛泽东思想辩证分析 Skill (MZT)
+
+基于毛泽东思想方法论的 AI Agent 辩证分析能力增强。
+
+## 项目定位
+
+本项目旨在将毛泽东思想的思维方式体系化，让 AI Agent 能够：
+
+1. **传播革命精神**：将毛泽东思想的立场、观点、方法传递给更多人
+2. **辅助辩证思考**：提供系统化的分析框架，而非固定公式
+3. **星星之火，可以燎原**：作为开源项目，让革命思想得以广泛传播
+
+**核心理念**：能力是持续运用的思维习惯，不是一次性完成的步骤。
+
+**注意**：本工具提供的是思维方式，使用者应保持批判性思考，不可教条化套用。
+```
+
+- [ ] **Step 2: 更新指令部分**
+
+```markdown
+## 指令
+
+| 指令 | 功能 |
+|------|------|
+| `/mzt` | 显式调用分析 — 进入能力驱动分析流程，输出结构化报告 |
+| `/mzt on` | 开启辩证思维模式 — Agent 在思考时自动融入辩证方法 |
+| `/mzt off` | 关闭辩证思维模式 — 恢复 Agent 默认思考方式 |
+
+**状态说明**: 辩证思维模式状态仅在当前会话有效，会话结束即重置为关闭。
+
+---
+
+## 参数处理
+
+根据 `$ARGUMENTS` 参数执行不同功能：
+
+### `/mzt on` — 开启辩证思维模式
+
+当参数为 `on` 时，**在当前会话中**开启辩证思维模式。Agent 在思考时**自动**融入以下原则：
+
+1. **具体问题具体分析**：不套用公式，分析问题的特殊性
+2. **矛盾视角**：识别主要矛盾和次要矛盾，把握矛盾的主要方面
+3. **实践导向**：方案需要可执行、可验证
+4. **立场意识**：考虑不同利益相关方的立场
+5. **发展眼光**：不仅看当前，还要看长远发展趋势
+6. **独立自主**：思考自己能掌控什么，建立战略支点
+7. **团结多数**：思考谁是朋友，可以团结谁
+
+### `/mzt off` — 关闭辩证思维模式
+
+当参数为 `off` 时，关闭辩证思维模式，恢复 Agent 默认思考方式。
+
+### `/mzt` 或 `/mzt [问题]` — 显式调用分析
+
+无参数或带有问题描述时，进入四能力驱动分析流程。
+```
+
+- [ ] **Step 3: 提交头部和指令修改**
+
+```bash
+git add mzt/SKILL.md
+git commit -m "refactor(mzt): update SKILL.md header and instructions
+
+- Keep core philosophy
+- Update instructions for capability-driven architecture
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 4: 重构 SKILL.md - 第二部分：四能力架构
+
+**Files:**
+- Modify: `mzt/SKILL.md`
+
+- [ ] **Step 1: 添加四能力架构总览**
+
+在指令部分之后，替换原有的"核心能力"部分：
+
+```markdown
+---
+
+## 四能力架构
+
+MZT 采用**能力驱动**架构，包含四个核心能力模块：
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      MZT 四能力架构                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  能力一：问题建构能力                                        │
+│  ├── 识别核心矛盾                                           │
+│  ├── 追问缺失信息                                           │
+│  └── 判断问题边界                                           │
+│                      ↓                                      │
+│  能力二：方法论选择能力                                      │
+│  ├── 根据矛盾性质选择                                       │
+│  ├── 论证选择理由                                           │
+│  └── 识别适用边界                                           │
+│                      ↓                                      │
+│  能力三：自我反思能力                                        │
+│  ├── 识别分析盲点                                           │
+│  ├── 预演可能反驳                                           │
+│  └── 接受反馈并迭代                                         │
+│                      ↓                                      │
+│  能力四：验证迭代能力                                        │
+│  ├── 提出可验证假设                                         │
+│  ├── 设计验证方法                                           │
+│  └── 根据结果迭代                                           │
+│                      ↓                                      │
+│  用户评价与反馈                                              │
+│  ├── 苏格拉底式确认                                         │
+│  ├── 判断模式提炼                                           │
+│  └── 案例库沉淀                                             │
+│                                                             │
+│  ←────── 反馈回路（非线性）──────→                           │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**能力之间的非线性反馈**：
+
+```
+问题建构 ←── 分析过程中发现界定有误
+    ↓
+方法论选择 ←── 自我反思发现选择不当
+    ↓
+分析论证 ──→ 自我反思
+    ↓              ↓
+验证迭代 ←── 用户反馈
+```
+```
+
+- [ ] **Step 2: 添加能力一详细说明**
+
+```markdown
+---
+
+## 能力一：问题建构能力
+
+### 核心目标
+
+不是"填写问题清单"，而是"发现核心矛盾"。
+
+### 子能力
+
+| 子能力 | 说明 | 苏格拉底式确认 |
+|--------|------|----------------|
+| 识别核心矛盾 | 找出问题背后的主要冲突 | "让我复述您的问题核心：...这样理解准确吗？" |
+| 追问缺失信息 | 围绕矛盾发现缺失的关键信息 | "您提到X，但我需要了解Y才能判断..." |
+| 判断问题边界 | 明确时间、空间、主体范围 | "这个问题的边界是...，有遗漏吗？" |
+
+### 追问原则
+
+1. **目的是发现矛盾，不是填清单**
+2. **用户可随时说"直接分析"跳过追问**
+3. **Agent 不主动判断"已清晰"，由用户确认**
+
+### 追问设计
+
+围绕矛盾展开的追问维度：
+
+- 这个问题的核心冲突是什么？
+- 冲突的双方是什么？
+- 哪一方处于支配地位？
+- 矛盾可能如何转化？
+- 为什么您认为这是主要矛盾？
+- 如果这个判断错了，会有什么后果？
+- 有没有其他可能的解释？
+```
+
+- [ ] **Step 3: 添加能力二详细说明**
+
+```markdown
+---
+
+## 能力二：方法论选择能力
+
+### 核心目标
+
+动态选择，而非预设映射。
+
+### 子能力
+
+| 子能力 | 说明 |
+|--------|------|
+| 根据矛盾性质选择 | 不按问题类型，按矛盾特征选择方法论 |
+| 论证选择理由 | 输出选择说明，接受用户调整 |
+| 识别适用边界 | 明确方法论的适用范围和局限 |
+
+### 问题特征维度
+
+根据问题的特征维度选择方法论：
+
+| 特征维度 | 推荐方法论 | 特征说明 |
+|----------|------------|----------|
+| 利益冲突 | 阶级立场分析法、矛盾分类处理法 | 涉及不同群体利益分配、存在对立立场 |
+| 趋势判断 | 发展辩证法、战略辩证法 | 需要分析事物发展方向、判断未来走向 |
+| 资源分配 | 聚焦突破法、统筹兼顾法 | 涉及有限资源的优先级决策 |
+| 人际关系 | 群众路线法、统一战线法 | 涉及团队、组织、群体关系 |
+| 战略决策 | 战略辩证法、独立自主法、灵活战略法 | 涉及长期规划、重大选择 |
+| 实践验证 | 认识循环法、批评与自我批评法 | 需要将分析结论付诸检验 |
+| 历史视角 | 发展辩证法、调查研究法 | 需要从历史维度理解问题 |
+| 问题诊断 | 思想纠偏法、矛盾分析法 | 需要识别问题根源 |
+
+**核心方法论**（所有分析必选其一）：矛盾分析法、实事求是法
+
+### 方法论选择输出模板
+
+```markdown
+## 方法论选择说明
+
+### 识别到的问题特征
+- [特征1]：[说明]
+- [特征2]：[说明]
+
+### 选择的方法论（共 2-3 个）
+
+| 方法论 | 选择理由 | 将用于分析 |
+|--------|----------|------------|
+| [方法论] | [基于哪个特征选择] | [解决什么问题] |
+
+### 适用边界
+- 本分析适用于：[范围]
+- 本分析不适用于：[范围]
+
+---
+请确认分析方向，或提出调整意见。
+```
+
+### 方法论选择原则
+
+1. **聚焦 2-3 个核心方法论**
+2. **每个方法论必须有明确的选择理由**
+3. **必须说明适用边界**
+4. **用户可调整选择**
+```
+
+- [ ] **Step 4: 提交能力一和能力二**
+
+```bash
+git add mzt/SKILL.md
+git commit -m "feat(mzt): add capability 1 and 2 documentation
+
+- Problem construction capability with Socratic questioning
+- Methodology selection capability with feature-based mapping
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 5: 重构 SKILL.md - 第三部分：能力三和能力四
+
+**Files:**
+- Modify: `mzt/SKILL.md`
+
+- [ ] **Step 1: 添加能力三详细说明**
+
+```markdown
+---
+
+## 能力三：自我反思能力
+
+### 核心目标
+
+贯穿全程的批判性思考。
+
+### 子能力
+
+| 子能力 | 应用时机 | 说明 |
+|--------|----------|------|
+| 识别分析盲点 | 分析过程中 | 哪些信息缺失？哪些假设未验证？ |
+| 预演可能反驳 | 分析完成后 | 反对者会怎么反驳？ |
+| 接受反馈迭代 | 用户评价后 | 记录反馈，指导改进 |
+
+### 批判性反思模板
+
+```markdown
+## 批判性反思
+
+### 核心假设
+本分析基于以下假设：
+1. [假设1] — 如果这个假设不成立，结论需要修改
+2. [假设2] — 验证方法：[如何验证]
+
+### 可能的反驳
+- 反驳视角一：[可能的反对意见]
+  - 回应：[如何回应]
+
+### 分析局限
+- 本分析未能覆盖：[局限]
+- 建议补充：[后续可以做什么]
+```
+```
+
+- [ ] **Step 2: 添加能力四详细说明**
+
+```markdown
+---
+
+## 能力四：验证迭代能力
+
+### 核心目标
+
+实践检验，形成闭环。
+
+### 子能力
+
+| 子能力 | 说明 |
+|--------|------|
+| 提出可验证假设 | 将分析结论转化为可检验的命题 |
+| 设计验证方法 | 如何在实践中检验 |
+| 根据结果迭代 | 验证后如何调整 |
+
+### 实践检验模板
+
+```markdown
+## 实践检验
+
+### 可验证的假设
+基于本分析，可以验证的核心假设：
+1. [假设1]：验证方法：[方法]，验证周期：[时间]
+
+### 验证方法建议
+| 验证项 | 方法 | 成功标准 | 失败应对 |
+|--------|------|----------|----------|
+| [验证项] | [方法] | [标准] | [如何调整] |
+
+### 迭代建议
+- 如果验证成功：[下一步]
+- 如果验证失败：[如何调整分析]
+```
+```
+
+- [ ] **Step 3: 提交能力三和能力四**
+
+```bash
+git add mzt/SKILL.md
+git commit -m "feat(mzt): add capability 3 and 4 documentation
+
+- Self-reflection capability with critical thinking template
+- Verification iteration capability with practice testing template
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 6: 重构 SKILL.md - 第四部分：用户评价与反馈机制
+
+**Files:**
+- Modify: `mzt/SKILL.md`
+
+- [ ] **Step 1: 添加用户评价与反馈部分**
+
+```markdown
+---
+
+## 用户评价与反馈
+
+### 苏格拉底式确认
+
+| 环节 | 确认方式 |
+|------|----------|
+| 问题理解后 | "让我复述：...这样准确吗？" |
+| 方法论选择后 | "基于这个方向，可能得出...的结论，是您期待的吗？" |
+| 报告完成后 | "这次分析中，最让您有启发的观点是什么？还有哪些疑问没解决？" |
+
+### 用户评价维度
+
+| 评价项 | 选项 |
+|--------|------|
+| 报告是否解决了问题 | 是 / 部分 / 否 |
+| 建议是否可执行 | 是 / 部分 / 否 |
+| 是否有新问题 | 开放回答 |
+
+### 用户评价交互流程
+
+1. 报告输出完成后，Agent 询问："这次分析中，最让您有启发的观点是什么？"
+2. 用户回答后，Agent 追问："还有哪些疑问没有解决？"
+3. 用户回答后，Agent 输出评价表单：
+   - 报告是否解决了问题？[是/部分/否]
+   - 建议是否可执行？[是/部分/否]
+4. 用户评价后，Agent 自动生成案例记录并存储到 `cases/` 目录
+
+### 知识沉淀结构
+
+```markdown
+## 案例记录
+
+### 问题特征
+- 核心矛盾：[描述]
+- 问题特征维度：[特征标签]
+- 特殊性：[本案例独特之处]
+
+### 方法论应用
+- 选择的方法论：[方法论名称]
+- 选择理由：[为什么选择]
+- 应用效果：[效果描述]
+
+### 判断模式提炼
+- 当遇到 [特征] 时，优先考虑 [方法论]
+- 注意避免 [常见错误]
+
+### 用户反馈
+- 问题解决程度：[是/部分/否]
+- 建议可执行性：[是/部分/否]
+- 用户补充：[开放回答]
+```
+
+### 案例库管理
+
+- **存储位置**：`mzt/cases/` 目录
+- **文件命名**：`YYYY-MM-DD-<主题摘要>.md`
+- **案例归档**：超过 100 条时，按时间归档到 `cases/archive/`
+- **案例索引**：`cases/INDEX.md` 维护案例目录，支持按特征检索
+```
+
+- [ ] **Step 2: 提交用户评价与反馈部分**
+
+```bash
+git add mzt/SKILL.md
+git commit -m "feat(mzt): add user evaluation and feedback mechanism
+
+- Socratic confirmation for 3 stages
+- User evaluation dimensions
+- Knowledge crystallization structure
+- Case library management
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 7: 重构 SKILL.md - 第五部分：报告结构和方法论体系
+
+**Files:**
+- Modify: `mzt/SKILL.md`
+
+- [ ] **Step 1: 更新报告结构部分**
+
+替换原有的"结构化报告章节"部分：
+
+```markdown
+---
+
+## 报告结构
+
+### 七章节结构
+
+| 章节 | 状态 | 说明 |
+|------|------|------|
+| 一、问题定义 | 必选 | 收敛精准，附问题特征 |
+| 二、事实依据 | 必选 | 数据来源、可靠性、信息缺口 |
+| 三、矛盾分析 | 必选 | 核心矛盾、转化条件 |
+| 四、客观条件 | 必选 | 环境和约束 |
+| 五、解决方案 | 必选 | 可执行的建议 |
+| 六、实践检验 | 必选 | 可验证假设、验证方法 |
+| 七、批判性反思 | 必选 | 核心假设、可能反驳、局限 |
+
+### 事实依据章节模板
+
+```markdown
+## 二、事实依据
+
+### 数据来源
+
+| 来源类型 | 具体来源 | 链接/出处 |
+|----------|----------|----------|
+| 官方数据 | ? | ? |
+| 研究报告 | ? | ? |
+| 新闻报道 | ? | ? |
+| 专家观点 | ? | ? |
+
+### 可靠性评估
+
+- [ ] 数据是否来自权威渠道？
+- [ ] 是否存在利益相关方影响？
+- [ ] 是否需要交叉验证？
+
+### 信息缺口
+
+- 哪些关键信息尚未获取？
+- 如何弥补这些缺口？
+```
+
+### 批判性反思章节模板
+
+```markdown
+## 七、批判性反思
+
+### 核心假设
+- 本报告的核心假设是什么？
+- 这些假设是否经得起检验？
+
+### 可能的反驳
+- 有没有其他可能的解释？
+- 反对者会怎么反驳我的结论？
+
+### 局限性
+- 本报告最大的局限是什么？
+- 什么情况下本报告的结论会失效？
+
+### 改进方向
+- 还需要补充哪些信息？
+- 分析还可以从哪些角度深化？
+```
+```
+
+- [ ] **Step 2: 更新方法论体系部分**
+
+将原有的六层方法论体系替换为新的三层架构：
+
+```markdown
+---
+
+## 方法论体系
+
+MZT 包含 **23 个方法论**，按三层架构组织：
+
+### 第一层：核心方法论
+
+**所有分析必选其一**
+
+| 方法论 | 核心要点 |
+|--------|----------|
+| [矛盾分析法](methodologies/01-contradiction-analysis.md) | 主要矛盾与次要矛盾 |
+| [实事求是法](methodologies/02-seek-truth-from-facts.md) | 从实际出发、反对主观主义 |
+
+### 第二层：按特征推荐
+
+**根据问题特征动态选择**
+
+参见 [能力二：方法论选择能力](#能力二方法论选择能力) 的"问题特征维度"表格。
+
+### 第三层：辅助方法论
+
+**按需调用**
+
+| 层级 | 方法论 | 核心要点 |
+|------|--------|----------|
+| 哲学层 | [具体问题具体分析法](methodologies/21-concrete-analysis.md) | 不同矛盾用不同方法解决 |
+| 哲学层 | [调查研究法](methodologies/06-investigation-research.md) | 没有调查没有发言权 |
+| 认识层 | [认识循环法](methodologies/03-practice-cycle.md) | 感性→理性→实践检验 |
+| 认识层 | [主观能动性法](methodologies/22-subjective-initiative.md) | 在客观条件限度内争取最好 |
+| 认识层 | [批评与自我批评法](methodologies/19-criticism-self-criticism.md) | 团结—批评—团结 |
+| 分析层 | [阶级立场分析法](methodologies/05-class-stance-analysis.md) | 利益决定立场、敌友辨别 |
+| 分析层 | [思想纠偏法](methodologies/07-thought-correction.md) | 识别表现→分析根源→纠正 |
+| 分析层 | [矛盾分类处理法](methodologies/08-contradiction-classification.md) | 敌我矛盾 vs 人民内部矛盾 |
+| 战略层 | [独立自主法](methodologies/17-independent-self-reliance.md) | 把命运掌握在自己手中 |
+| 战略层 | [统一战线法](methodologies/18-united-front.md) | 团结多数、孤立少数 |
+| 战略层 | [战略辩证法](methodologies/09-strategic-dialectics.md) | 强弱转化、持久与速决 |
+| 战略层 | [战略藐视战术重视法](methodologies/20-strategic-contempt-tactical-seriousness.md) | 战略自信与战术谨慎 |
+| 战略层 | [发展辩证法](methodologies/04-development-dialectics.md) | 小与大的转化、长远眼光 |
+| 执行层 | [聚焦突破法](methodologies/11-focus-breakthrough.md) | 集中资源、重点突破 |
+| 执行层 | [灵活战略法](methodologies/10-flexible-strategy.md) | 保存自己消灭敌人 |
+| 执行层 | [统筹兼顾法](methodologies/12-overall-coordination.md) | 十大关系的平衡与协调 |
+| 执行层 | [领导方法法](methodologies/23-leadership-method.md) | 一般与个别、领导与群众 |
+| 执行层 | [持之以恒法](methodologies/15-persistence.md) | 坚定信念、持续努力 |
+| 保障层 | [群众路线法](methodologies/13-mass-line.md) | 从群众中来、到群众中去 |
+| 保障层 | [宗旨导向法](methodologies/16-purpose-orientation.md) | 根本宗旨、价值导向 |
+| 保障层 | [组织纪律法](methodologies/14-organizational-discipline.md) | 原则性vs人情关系 |
+```
+
+- [ ] **Step 3: 提交报告结构和方法论体系更新**
+
+```bash
+git add mzt/SKILL.md
+git commit -m "refactor(mzt): update report structure and methodology system
+
+- Replace 6-layer with 3-layer methodology architecture
+- Update report structure with clear status markers
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 8: 重构 SKILL.md - 第六部分：使用流程和注意事项
+
+**Files:**
+- Modify: `mzt/SKILL.md`
+
+- [ ] **Step 1: 更新使用流程部分**
+
+```markdown
+---
+
+## 使用流程
+
+### 显式调用 (`/mzt`)
+
+四能力驱动的分析流程：
+
+```
+阶段 1: 问题建构（能力一）
+    │
+    ├── 识别核心矛盾
+    ├── 追问缺失信息
+    └── 用户确认"问题已理解"
+    │
+    ▼
+阶段 2: 方法论选择（能力二）
+    │
+    ├── 识别问题特征维度
+    ├── 选择 2-3 个方法论
+    ├── 论证选择理由
+    └── 用户确认"方向正确"
+    │
+    ▼
+阶段 3: 分析输出（能力三内嵌）
+    │
+    ├── 输出七章节报告
+    └── 包含批判性反思章节
+    │
+    ▼
+阶段 4: 验证迭代（能力四）
+    │
+    ├── 提出可验证假设
+    └── 设计验证方法
+    │
+    ▼
+阶段 5: 用户评价与反馈
+    │
+    ├── 苏格拉底式确认
+    ├── 用户评价
+    └── 案例记录沉淀
+```
+
+### 辩证思维模式 (`/mzt on`)
+
+当用户开启辩证思维模式后，Agent 在思考时**自动**融入以下原则：
+
+1. **具体问题具体分析**：不套用公式，分析特殊性
+2. **矛盾视角**：识别主要矛盾和次要矛盾
+3. **实践导向**：方案需要可执行、可验证
+4. **立场意识**：考虑不同利益相关方的立场
+5. **发展眼光**：不仅看当前，还要看长远发展趋势
+6. **独立自主**：思考自己能掌控什么，建立支点
+7. **团结多数**：思考谁是朋友，可以团结谁
+```
+
+- [ ] **Step 2: 更新经典引用规范和注意事项**
+
+保留现有的经典引用规范，更新注意事项：
+
+```markdown
+---
+
+## 经典引用规范
+
+### 引用原则
+
+1. **引用是为了说明，不是为了装饰**
+2. **引用后必须有展开分析**
+3. **引用要嵌入论证逻辑**
+
+### 错误示例
+
+```markdown
+> 星星之火，可以燎原。
+
+（引用后无分析，直接进入下一节）
+```
+
+### 正确示例
+
+```markdown
+商鞅变法从一国实践开始，最终推动了历史发展——这正是"星星之火，可以燎原"的生动体现。变法虽然始于秦国一隅，但它代表的新兴地主阶级利益顺应历史潮流，最终促成了中国从奴隶社会向封建社会的转型。
+
+具体而言：
+1. **起点虽小**：变法始于落后的秦国，被视为"蛮夷"之地
+2. **方向正确**：代表新兴生产力的发展要求
+3. **逐步扩展**：秦国的成功为统一六国奠定基础
+4. **最终燎原**：推动了中国社会形态的整体转型
+```
+
+### 引用展开模板
+
+引用经典语录后，应该回答：
+
+1. 这句话在本案例中具体指什么？
+2. 为什么这个案例可以印证这句话？
+3. 具体表现在哪些方面？
+
+---
+
+## 注意事项
+
+1. **能力是思维习惯，不是步骤**：能力模块之间存在非线性反馈，不是简单的线性流程
+2. **方法论是工具，不是教条**：根据实际问题灵活运用，不可生搬硬套
+3. **保持批判性思考**：工具提供思维方式，使用者应保持独立判断
+4. **用户确认是关键**：苏格拉底式确认帮助深化认识，不是形式化流程
+5. **实践是检验标准**：分析的有效性需要在实践中验证
+6. **传播革命精神**：不仅学习方法，更要传承立场和精神
+
+---
+
+## 参考资源
+
+- [毛泽东选集](https://www.marxists.org/chinese/maozedong/index.htm)
+- [Agent Skills 规范](https://agentskills.io)
+```
+
+- [ ] **Step 3: 提交使用流程和注意事项更新**
+
+```bash
+git add mzt/SKILL.md
+git commit -m "refactor(mzt): update usage flow and notes
+
+- Replace 4-stage flow with 5-stage capability-driven flow
+- Update notes to emphasize capability as thinking habit
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 9: 更新 README.md
+
+**Files:**
+- Modify: `mzt/README.md`
+
+- [ ] **Step 1: 更新 README.md**
+
+```markdown
+# MZT (毛泽东思想辩证分析 Skill)
+
+基于毛泽东思想方法论的 AI Agent 辩证分析能力增强。
+
+## 核心特性
+
+### 四能力架构
+
+MZT 采用**能力驱动**架构，而非传统的流程设计：
+
+| 能力 | 核心目标 |
+|------|----------|
+| **问题建构能力** | 发现核心矛盾，而非填写清单 |
+| **方法论选择能力** | 动态选择，而非预设映射 |
+| **自我反思能力** | 贯穿全程的批判性思考 |
+| **验证迭代能力** | 实践检验，形成闭环 |
+
+### 新旧架构对比
+
+| 维度 | 旧架构（流程设计） | 新架构（能力设计） |
+|------|-------------------|-------------------|
+| 入口 | 问题类型识别（10种预设） | 问题特征识别（8维度动态） |
+| 追问目的 | 填充清晰度清单 | 发现核心矛盾 |
+| 方法论 | 静态分层+预设映射 | 动态优先级+按需选择 |
+| 质量检查 | Agent自评 | Agent自评+用户评价 |
+| 闭环机制 | 无 | 用户反馈→判断模式提炼→知识沉淀 |
+
+## 安装
+
+```bash
+# 安装到当前项目
+npx skills add your-github/mzt
+
+# 全局安装
+npx skills add your-github/mzt -g -a claude-code
+```
+
+## 使用方法
+
+| 指令 | 功能 |
+|------|------|
+| `/mzt` | 显式调用分析 — 进入四能力驱动分析流程 |
+| `/mzt on` | 开启辩证思维模式 |
+| `/mzt off` | 关闭辩证思维模式 |
+
+## 方法论体系
+
+包含 23 个方法论，按三层架构组织：
+
+1. **核心方法论**：矛盾分析法、实事求是法（必选其一）
+2. **按特征推荐**：根据问题特征动态选择
+3. **辅助方法论**：按需调用
+
+详细方法论列表请参见 [SKILL.md](mzt/SKILL.md)。
+
+## 项目结构
+
+```
+mzt/
+├── SKILL.md              # 核心 skill 文件
+├── methodologies/        # 23 个方法论文件
+├── configs/              # 配置文件
+│   ├── feature-mapping.yaml  # 问题特征-方法论映射
+│   └── case-template.md      # 案例记录模板
+├── cases/                # 案例库
+│   └── INDEX.md          # 案例索引
+└── README.md
+```
+
+## 参考资源
+
+- [毛泽东选集](https://www.marxists.org/chinese/maozedong/index.htm)
+- [Agent Skills 规范](https://agentskills.io)
+
+---
+
+*传播革命精神，星星之火，可以燎原*
+```
+
+- [ ] **Step 2: 提交 README.md 更新**
+
+```bash
+git add mzt/README.md
+git commit -m "docs(mzt): update README for capability-driven architecture
+
+- Add 4-capability overview
+- Add architecture comparison table
+- Update project structure
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+```
+
+---
+
+## Task 10: 最终验证和发布
+
+**Files:**
+- All modified files
+
+- [ ] **Step 1: 验证文件结构**
+
+```bash
+ls -la mzt/
+ls -la mzt/configs/
+ls -la mzt/cases/
+```
+
+Expected output:
+```
+mzt/
+├── SKILL.md
+├── README.md
+├── methodologies/
+├── configs/
+│   ├── feature-mapping.yaml
+│   └── case-template.md
+└── cases/
+    └── INDEX.md
+```
+
+- [ ] **Step 2: 验证 SKILL.md 字数**
+
+```bash
+wc -m mzt/SKILL.md
+```
+
+Expected: 核心内容 ≥ 3000 字
+
+- [ ] **Step 3: 验证 git 状态**
+
+```bash
+git status
+git log --oneline -10
+```
+
+- [ ] **Step 4: 创建版本标签**
+
+```bash
+git tag -a v2.0.0 -m "MZT Skills v2.0: Capability-driven architecture
+
+Major changes:
+- Shift from process design to capability design
+- 4 capabilities: Problem Construction, Methodology Selection, Self-reflection, Verification Iteration
+- Feature-based methodology selection (8 dimensions)
+- Socratic confirmation mechanism
+- User feedback loop with knowledge crystallization
+"
+```
+
+- [ ] **Step 5: 最终提交**
+
+```bash
+git push origin main --tags
+```
+
+---
+
+## 验收清单
+
+- [ ] `mzt/configs/feature-mapping.yaml` 存在且包含 8 种特征维度
+- [ ] `mzt/configs/case-template.md` 存在且格式正确
+- [ ] `mzt/cases/INDEX.md` 存在
+- [ ] `mzt/SKILL.md` 包含四能力详细说明
+- [ ] `mzt/SKILL.md` 包含苏格拉底式确认机制
+- [ ] `mzt/SKILL.md` 包含用户评价和知识沉淀机制
+- [ ] `mzt/SKILL.md` 核心内容 ≥ 3000 字
+- [ ] `mzt/README.md` 包含新旧架构对比说明
+- [ ] 所有文件已提交到 git
+
+---
+
+*计划创建于 2026-04-11*
