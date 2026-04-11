@@ -1,0 +1,57 @@
+# 问题特征-方法论映射配置
+# 用于能力二：方法论选择能力
+
+features:
+  - name: 利益冲突
+    description: 涉及不同群体利益分配、存在对立立场
+    recommended_methods:
+      - 阶级立场分析法
+      - 矛盾分类处理法
+
+  - name: 趋势判断
+    description: 需要分析事物发展方向、判断未来走向
+    recommended_methods:
+      - 发展辩证法
+      - 战略辩证法
+
+  - name: 资源分配
+    description: 涉及有限资源的优先级决策
+    recommended_methods:
+      - 聚焦突破法
+      - 统筹兼顾法
+
+  - name: 人际关系
+    description: 涉及团队、组织、群体关系
+    recommended_methods:
+      - 群众路线法
+      - 统一战线法
+
+  - name: 战略决策
+    description: 涉及长期规划、重大选择
+    recommended_methods:
+      - 战略辩证法
+      - 独立自主法
+      - 灵活战略法
+
+  - name: 实践验证
+    description: 需要将分析结论付诸检验
+    recommended_methods:
+      - 认识循环法
+      - 批评与自我批评法
+
+  - name: 历史视角
+    description: 需要从历史维度理解问题
+    recommended_methods:
+      - 发展辩证法
+      - 调查研究法
+
+  - name: 问题诊断
+    description: 需要识别问题根源
+    recommended_methods:
+      - 思想纠偏法
+      - 矛盾分析法
+
+# 核心方法论（所有分析必选其一）
+core_methods:
+  - 矛盾分析法
+  - 实事求是法
