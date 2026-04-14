@@ -36,9 +36,31 @@ This project focuses on distilling and spreading thinking methodologies, without
 
 ## Core Features
 
-### Four-Capability Architecture
+### Five-Stage Process + Gate Mechanism
 
-MZT adopts a **capability-driven** architecture rather than traditional process design:
+MZT adopts a **five-stage process**, adding "Problem Type Judgment" before the four-capability architecture, with **Gate mechanism** forcing Agent to wait for user confirmation at key checkpoints:
+
+| Stage | Description | Gate |
+|-------|-------------|------|
+| **Stage 0** | Problem Type Judgment | Gate 0: Type Judgment Gate |
+| **Stage 1** | Problem Construction | Gate 1: Problem Confirmation Gate |
+| **Stage 2** | Methodology Selection | Gate 2: Direction Confirmation Gate |
+| **Stage 3** | Analysis Output | Gate 3: Report Completion Gate |
+| **Stage 4** | Verification & Iteration | - |
+| **Stage 5** | User Evaluation & Feedback | - |
+
+### Problem Type Classification
+
+Agent automatically judges problem type and adopts different questioning strategies:
+
+| Type | Definition | Questioning Strategy |
+|------|------------|---------------------|
+| **Practice-oriented** | Involves user's personal decisions, resources, situations | Must ask questions |
+| **Cognitive** | Explores objective facts, historical events, universal laws | Direct analysis |
+| **Quasi-cognitive** | Appears general but can be personalized | Can answer directly, note personalization |
+| **Boundary-blurred** | Cannot be determined from the question itself | One round of questioning to determine context |
+
+### Four-Capability Architecture
 
 | Capability | Core Objective |
 |------------|----------------|
@@ -180,13 +202,30 @@ Available commands after installation: `/mzt`, `/mzt on`, `/mzt off`
 
 ### Example
 
-**Explicit invocation**:
+**Explicit invocation (Practice-oriented problem)**:
 ```
 User: /mzt I'm considering whether to join a startup company
 
-Agent: Let me help you analyze this career decision...
+Agent: This is a practice-oriented problem involving your personal decision. Before starting the analysis, I need to understand: What is your current professional background and main concerns? You can answer the above question, or say "direct analysis" to skip.
 
-[Enter guided dialogue, collect information, output structured report]
+User: I have 5 years of backend development experience, mainly worried about the stability of startups...
+
+Agent: Let me restate the core of your problem: You are considering whether to join a startup, and the main contradiction is the trade-off between career development opportunities and stability. Is this understanding accurate?
+
+User: Problem understood
+
+Agent: [Output methodology selection, wait for confirmation]
+
+User: Direction correct
+
+Agent: [Output complete analysis report]
+```
+
+**Explicit invocation (Cognitive problem)**:
+```
+User: /mzt Why was Qin Shi Huang able to unify the six states?
+
+Agent: This is a cognitive problem, I will analyze it directly. [Output methodology selection, wait for confirmation before outputting complete report]
 ```
 
 **Enable dialectical thinking mode**:
