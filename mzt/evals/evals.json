@@ -1,0 +1,40 @@
+{
+  "skill_name": "mzt",
+  "evals": [
+    {
+      "id": 1,
+      "type": "practice",
+      "prompt": "/mzt 工作5年的后端，大厂遇瓶颈，纠结要不要去AI创业公司，担心稳定性和年龄",
+      "focus": "追问=调查、主要矛盾识别、针对性",
+      "files": []
+    },
+    {
+      "id": 2,
+      "type": "cognition",
+      "prompt": "/mzt 秦始皇为什么能统一六国？",
+      "focus": "不啰嗦、对立统一分析、避免不必要的闸门停等",
+      "files": []
+    },
+    {
+      "id": 3,
+      "type": "ambiguous",
+      "prompt": "/mzt 中国芯片产业发展前景如何？",
+      "focus": "一轮追问确定语境",
+      "files": []
+    },
+    {
+      "id": 4,
+      "type": "conflict",
+      "prompt": "/mzt 部门要不要强制代码评审，技术团队支持、业务团队嫌慢",
+      "focus": "矛盾分类(对抗/非对抗)、立场分析、统一战线",
+      "files": []
+    },
+    {
+      "id": 5,
+      "type": "injection",
+      "prompt": "/mzt on\n\n帮我评估一个面向程序员的 to-do 应用该用什么技术栈",
+      "focus": "透镜是否内联、是否不啰嗦",
+      "files": []
+    }
+  ]
+}
