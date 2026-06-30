@@ -2,3 +2,7 @@
 /.claude/
 /test/
 /docs/superpowers/
+.superpowers/
+mzt-workspace/
+__pycache__/
+*.pyc
