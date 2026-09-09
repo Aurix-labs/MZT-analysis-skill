@@ -1,35 +1,66 @@
+"""检查可机械测量的输出契约；不把脚本单测当作技能行为评测。"""
+
+import pytest
+
 from check_objective import check_output
 
 
-def test_names_main_contradiction_detected():
-    text = "## 矛盾分析\n本问题的主要矛盾是个人成长与平台稳定之间的冲突。"
-    assert check_output(text, "practice")["names_main_contradiction"] is True
+def test_reports_codepoints_and_nonempty_lines_without_quality_verdict():
+    result = check_output("你好\n\nworld", "practice")
+    assert result == {
+        "schema_version": 2,
+        "character_count": 9,
+        "nonempty_line_count": 2,
+        "constraints": {},
+    }
 
 
-def test_main_contradiction_heading_only_not_counted():
-    text = "## 主要矛盾\n（此处为空）"
-    assert check_output(text, "practice")["names_main_contradiction"] is False
+def test_keywords_and_plausible_citations_do_not_become_semantic_scores():
+    result = check_output("主要矛盾是甲乙冲突。可证伪：明天见。来源：某权威报告。", "cognition")
+    assert set(result) == {
+        "schema_version", "character_count", "nonempty_line_count", "constraints"
+    }
+    assert result["constraints"] == {}
 
 
-def test_falsifiable_hypothesis_detected():
-    text = "可验证假设：若三个月内拿到两个 offer，则市场需求成立。验证方法：投递并统计。"
-    assert check_output(text, "practice")["has_falsifiable_hypothesis"] is True
+def test_legacy_problem_type_does_not_impose_an_output_shape():
+    text = "请确认这次操作的目标环境。"
+    assert check_output(text, "cognition") == check_output(text, "practice")
 
 
-def test_fabricated_source_counted():
-    text = "数据来源：某权威报告。链接：http://example.com"
-    assert check_output(text, "cognition")["fabricated_sources"] >= 1
+def test_explicit_character_limit_is_inclusive():
+    result = check_output("四个字符", constraints={"max_characters": 4})
+    assert result["constraints"]["max_characters"] == {
+        "expected": 4, "observed": 4, "satisfied": True
+    }
 
 
-def test_cognition_avoids_gate():
-    text = "秦统一六国的根本原因是……（直接展开分析，无停等）"
-    assert check_output(text, "cognition")["avoided_unneeded_gate"] is True
+def test_character_limit_includes_whitespace_and_punctuation():
+    result = check_output("答。\n", constraints={"max_characters": 2})
+    assert result["constraints"]["max_characters"] == {
+        "expected": 2, "observed": 3, "satisfied": False
+    }
 
 
-def test_cognition_gate_present_flagged():
-    text = "请确认方向正确后我再继续，等待您回复。"
-    assert check_output(text, "cognition")["avoided_unneeded_gate"] is False
+def test_explicit_line_constraint_ignores_blank_lines():
+    result = check_output("第一行\n  \n第二行\n", constraints={"exact_nonempty_lines": 1})
+    assert result["constraints"]["exact_nonempty_lines"] == {
+        "expected": 1, "observed": 2, "satisfied": False
+    }
 
 
-def test_non_cognition_gate_field_is_none():
-    assert check_output("任意文本", "practice")["avoided_unneeded_gate"] is None
+def test_empty_output_is_measured_without_claiming_quality():
+    result = check_output("", constraints={"max_characters": 0, "exact_nonempty_lines": 0})
+    assert result["character_count"] == result["nonempty_line_count"] == 0
+    assert all(item["satisfied"] for item in result["constraints"].values())
+
+
+def test_unknown_constraints_are_not_silently_reported_as_passed():
+    with pytest.raises(ValueError, match="Unsupported constraint"):
+        check_output("回答", constraints={"factually_correct": True})
+
+
+@pytest.mark.parametrize("limit", [-1, 1.5, True, "100"])
+def test_limits_require_nonnegative_integers(limit):
+    with pytest.raises(ValueError, match="nonnegative integer"):
+        check_output("回答", constraints={"max_characters": limit})

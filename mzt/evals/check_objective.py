@@ -1,29 +1,30 @@
-"""MZT 输出客观指标检查。真实测量，不为通过测试硬编码任何样例答案。"""
-import re
+"""测量可见输出的尺寸和题目明确给出的限制，不判断思考或事实质量。
 
-_MAIN_CONTRADICTION = re.compile(r"主要矛盾[是为：:]\s*\S+|主要矛盾.{0,30}?(冲突|矛盾|权衡|对立)")
-_FALSIFIABLE = re.compile(r"(可验证假设|可证伪|验证方法)[：:].*\S")
-_GATE = re.compile(r"(确认方向正确|等待您回复|请确认|方向正确吗|您可以说.直接分析)")
-# 可疑/占位来源样式：保守统计，避免误伤真实引用
-_FAB_SOURCE = [
-    re.compile(r"http://example\.com"),
-    re.compile(r"来源[：:]\s*[?？]"),
-    re.compile(r"某(权威|知名|相关)?(报告|机构|研究|媒体)"),
-    re.compile(r"\[?待补充\]?|占位"),
-]
+返回结构为 v2。保留旧的 problem_type 参数以便迁移调用；它不参与测量。
+字符数是 Python len(text)，含空白和标点，不是 token 数或中文词数。
+"""
 
 
-def check_output(text: str, problem_type: str) -> dict:
-    names_main = bool(_MAIN_CONTRADICTION.search(text))
-    has_hyp = bool(_FALSIFIABLE.search(text))
-    fab = sum(len(p.findall(text)) for p in _FAB_SOURCE)
-    if problem_type == "cognition":
-        avoided_gate = not bool(_GATE.search(text))
-    else:
-        avoided_gate = None
+def check_output(text: str, problem_type=None, *, constraints=None) -> dict:
+    """constraints 仅接受 max_characters 和 exact_nonempty_lines。
+
+    调用方只能传入用户明确要求的限制；未指定时不施加长度或格式目标。
+    返回的 satisfied 只表示该项可机械检查的限制是否满足。
+    """
+    character_count = len(text)
+    nonempty_line_count = sum(bool(line.strip()) for line in text.splitlines())
+    checks = {}
+    for name, expected in (constraints or {}).items():
+        if name not in {"max_characters", "exact_nonempty_lines"}:
+            raise ValueError(f"Unsupported constraint: {name}")
+        if type(expected) is not int or expected < 0:
+            raise ValueError(f"{name} must be a nonnegative integer")
+        observed = character_count if name == "max_characters" else nonempty_line_count
+        satisfied = observed <= expected if name == "max_characters" else observed == expected
+        checks[name] = {"expected": expected, "observed": observed, "satisfied": satisfied}
     return {
-        "names_main_contradiction": names_main,
-        "has_falsifiable_hypothesis": has_hyp,
-        "fabricated_sources": fab,
-        "avoided_unneeded_gate": avoided_gate,
+        "schema_version": 2,
+        "character_count": character_count,
+        "nonempty_line_count": nonempty_line_count,
+        "constraints": checks,
     }

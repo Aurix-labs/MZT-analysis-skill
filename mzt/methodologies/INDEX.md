@@ -1,33 +1,35 @@
-# 方法论索引
+# 思想参考索引
 
-全部 23 个方法论的一句话索引。`[核心]` = 高频常用，所有分析优先考虑；其中**矛盾分析法与实事求是法**是 SKILL.md"第一层：核心方法论"所列的**必选其一**，其余 `[核心]` 为高频但可选。`[按需]` = 按问题特征调用。
+这 23 篇材料从《毛泽东选集》提炼相互联系的思考方向。它们帮助理解事实、关系、发展和实践，不规定 AI 必须选择多少种方法、按什么顺序探索或怎样组织回答。判断仍须建立在必要的调查与证据上。文件中的章节是概念讲解，示例是探索思路，不是需要复现的回答模板。
 
-选择指南见 [SKILL.md — 能力二：方法论选择能力](../SKILL.md#能力二方法论选择能力)。
+核心思想不是“方法覆盖率”：从实际出发，在具体关系中理解矛盾及其不平衡发展，关注人民的实际处境，并让认识回到实践中接受检验。这些思想应改善对对象的理解；如果某种具体解释与事实冲突，就修正或放弃它。
 
----
+按当前理解中的疑点阅读相关材料即可，不必先给问题分类。没有需要展开的概念时，依据 [SKILL.md](../SKILL.md) 直接完成用户任务；也不必在最终回答中报告读了哪些方法。
 
-| 标签 | 方法论 | 一句话要点 | 文件 |
-|------|--------|-----------|------|
-| [核心] | 矛盾分析法 | 主要矛盾与次要矛盾，抓住事物发展的关键环节 | [01-contradiction-analysis.md](01-contradiction-analysis.md) |
-| [核心] | 实事求是法 | 从实际出发、反对主观主义，一切结论产生于调查之后 | [02-seek-truth-from-facts.md](02-seek-truth-from-facts.md) |
-| [核心] | 阶级立场分析法 | 利益决定立场、敌友辨别，分析谁是我们的敌人谁是我们的朋友 | [05-class-stance-analysis.md](05-class-stance-analysis.md) |
-| [核心] | 统一战线法 | 团结多数、孤立少数，最大限度地争取同盟者 | [18-united-front.md](18-united-front.md) |
-| [核心] | 聚焦突破法 | 集中优势资源、重点突破，避免平均分配力量 | [11-focus-breakthrough.md](11-focus-breakthrough.md) |
-| [核心] | 发展辩证法 | 小与大的转化、长远眼光，星星之火可以燎原 | [04-development-dialectics.md](04-development-dialectics.md) |
-| [按需] | 认识循环法 | 感性→理性→实践检验，实践是检验真理的唯一标准 | [03-practice-cycle.md](03-practice-cycle.md) |
-| [按需] | 调查研究法 | 没有调查没有发言权，深入实际获取第一手材料 | [06-investigation-research.md](06-investigation-research.md) |
-| [按需] | 思想纠偏法 | 识别表现→分析根源→纠正，克服错误思想倾向 | [07-thought-correction.md](07-thought-correction.md) |
-| [按需] | 矛盾分类处理法 | 敌我矛盾 vs 人民内部矛盾，不同性质矛盾用不同方法解决 | [08-contradiction-classification.md](08-contradiction-classification.md) |
-| [按需] | 战略辩证法 | 强弱转化、持久与速决，在战略上藐视、在战术上重视 | [09-strategic-dialectics.md](09-strategic-dialectics.md) |
-| [按需] | 灵活战略法 | 保存自己消灭敌人，灵活机动地运用战略战术 | [10-flexible-strategy.md](10-flexible-strategy.md) |
-| [按需] | 统筹兼顾法 | 十大关系的平衡与协调，统筹处理各方面关系 | [12-overall-coordination.md](12-overall-coordination.md) |
-| [按需] | 群众路线法 | 从群众中来、到群众中去，一切为了群众依靠群众 | [13-mass-line.md](13-mass-line.md) |
-| [按需] | 组织纪律法 | 原则性 vs 人情关系，反对自由主义维护组织统一 | [14-organizational-discipline.md](14-organizational-discipline.md) |
-| [按需] | 持之以恒法 | 坚定信念、持续努力，愚公移山精神克服一切困难 | [15-persistence.md](15-persistence.md) |
-| [按需] | 宗旨导向法 | 根本宗旨、价值导向，为人民服务是一切工作的出发点 | [16-purpose-orientation.md](16-purpose-orientation.md) |
-| [按需] | 独立自主法 | 把命运掌握在自己手中，独立思考不依赖外力 | [17-independent-self-reliance.md](17-independent-self-reliance.md) |
-| [按需] | 批评与自我批评法 | 团结—批评—团结，在批评中提高在自我批评中进步 | [19-criticism-self-criticism.md](19-criticism-self-criticism.md) |
-| [按需] | 战略藐视战术重视法 | 战略自信与战术谨慎，从战略上藐视困难从战术上重视困难 | [20-strategic-contempt-tactical-seriousness.md](20-strategic-contempt-tactical-seriousness.md) |
-| [按需] | 具体问题具体分析法 | 不同矛盾用不同方法解决，反对千篇一律的做法 | [21-concrete-analysis.md](21-concrete-analysis.md) |
-| [按需] | 主观能动性法 | 在客观条件限度内争取最好，发挥人的主观能动性 | [22-subjective-initiative.md](22-subjective-initiative.md) |
-| [按需] | 领导方法法 | 一般与个别相结合、领导与群众相结合的工作方法 | [23-leadership-method.md](23-leadership-method.md) |
+| 参考 | 它可能帮助看见什么 |
+|------|--------------------|
+| [矛盾分析法](01-contradiction-analysis.md) | 关系中的相互依存与排斥，主次矛盾和主要方面的区别，内外因及转化条件 |
+| [实事求是法](02-seek-truth-from-facts.md) | 事实与解释的距离，教条和经验怎样遮蔽实际，反证怎样改变判断 |
+| [认识循环法](03-practice-cycle.md) | 感性材料如何形成认识，实践结果如何检验和修正认识 |
+| [发展辩证法](04-development-dialectics.md) | 当前状态之外的发展机制，积累怎样在具体条件下改变强弱和性质 |
+| [阶级立场分析法](05-class-stance-analysis.md) | 追查经济与组织联系，区分自我代言、利益关系、制度效果和个人动机 |
+| [调查研究法](06-investigation-research.md) | 追溯现实与历史、原始主张和后续变化，辨明争议对象是否被改写 |
+| [思想纠偏法](07-thought-correction.md) | 反复行为背后的认识方式，同时检查制度、资源及自身框架 |
+| [矛盾分类处理法](08-contradiction-classification.md) | 不同性质与状态的分歧为何需要不同处理，处理本身如何改变关系 |
+| [战略辩证法](09-strategic-dialectics.md) | 时间、资源和行动怎样改变力量对比，持久是否真的有利 |
+| [灵活战略法](10-flexible-strategy.md) | 目标与手段的关系，集中和分散各自的条件，可持续行动的基础 |
+| [聚焦突破法](11-focus-breakthrough.md) | 局部有效投入能否解除全局约束，集中资源的代价和作用机制 |
+| [统筹兼顾法](12-overall-coordination.md) | 重点赖以成立的支持条件，局部收益转移给其他方面的成本 |
+| [群众路线法](13-mass-line.md) | 笼统代言下不同群体的实际处境，参与和实践反馈怎样检验主张 |
+| [组织纪律法](14-organizational-discipline.md) | 协作中的原则和责任，以及规则本身能否接受纠错 |
+| [持之以恒法](15-persistence.md) | 长期积累与即时反馈的关系，继续、调整或停止各自的依据 |
+| [宗旨导向法](16-purpose-orientation.md) | 工作为了谁，指标和手段是否偏离实际价值 |
+| [独立自主法](17-independent-self-reliance.md) | 真实选择空间、外部依赖和主体性，自主与合作如何相容 |
+| [统一战线法](18-united-front.md) | 有分歧时的共同基础，合作中的独立性、边界和真实代价 |
+| [批评与自我批评法](19-criticism-self-criticism.md) | 已投入的判断能否被新事实修正，批评怎样改变实际工作 |
+| [战略藐视战术重视法](20-strategic-contempt-tactical-seriousness.md) | 长期信心和具体风险的层次区别，两者如何同时受事实约束 |
+| [具体问题具体分析法](21-concrete-analysis.md) | 哪些条件差异真正改变结论，理论和经验何时适用或应被放弃 |
+| [主观能动性法](22-subjective-initiative.md) | 客观条件中的行动空间，努力怎样改变条件及其现实限度 |
+| [领导方法](23-leadership-method.md) | 一般与个别、组织协调与当事者经验之间的联系，试点为何可以或不能推广 |
+
+原作的政治与战争概念保留其历史语境。借鉴思想方法，不等于搬用敌友身份、战争目标、历史阶段或必胜结论。现代事实需要现代证据，方法本身不能替代它们。

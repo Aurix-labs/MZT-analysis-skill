@@ -1,306 +1,193 @@
-# MZT - Mao Zedong Thought Dialectical Analysis Skill
+<p align="center">
+  <img src="assets/readme/mao-flag.png" alt="A red flag and a black-and-white silhouette of Mao Zedong" width="280">
+</p>
 
-[中文文档](README.md)
+<h1 align="center">MZT</h1>
 
-**A single spark can start a prairie fire.**
+<p align="center">
+  <strong>Mao Zedong Thought · Dialectical Thinking Skill</strong><br>
+  Help AI start from concrete facts and make judgments that can be tested.
+</p>
 
-**MZT-analysis-skill — Empower AI with dialectical thinking.**
+<p align="center">
+  <a href="README.md">中文</a> · <strong>English</strong>
+</p>
 
-MZT systematizes **23** core methodologies from Mao Zedong's Selected Works into capabilities that AI Agents can apply. When facing complex problems, AI can:
+<p align="center">
+  <a href="#quick-start">Quick start</a> ·
+  <a href="#core-ideas">Core ideas</a> ·
+  <a href="#a-concrete-example">In practice</a> ·
+  <a href="#evaluating-mzt">Evaluation</a>
+</p>
 
-- **Identify principal contradictions** and grasp the key to problems
-- **Seek truth from facts** and analyze based on actual conditions
-- **Discern stances** and understand the demands of stakeholders
-- **Formulate strategies** with independent self-reliance, united front, and focused breakthrough
-- **Iterate continuously** and validate through practice
-
-**This is not a simple prompt template, but a complete dialectical thinking system.**
-
-
-## Project Mission
-
-This project focuses on distilling and spreading thinking methodologies, without involving any political stance. We believe that excellent wisdom belongs to all humanity and should be inherited and developed.
-
-**Core Objectives**:
-
-1. **Wisdom Inheritance**: Systematize thinking methods tested by practice, enabling more people to learn and apply them
-2. **Thinking Enhancement**: Provide systematic analytical frameworks to help users cultivate deep thinking and dialectical analysis abilities
-3. **Open Source Sharing**: As an open-source project, spread excellent methodologies widely to promote knowledge accessibility
-
-**Guiding Principles**:
-- This tool provides **thinking frameworks**, not fixed formulas
-- Users should maintain **critical thinking** and apply flexibly to actual situations
-- The value of methodology lies in practice—follow the principle of **concrete analysis of concrete problems**
+<p align="center">
+  <strong>23</strong> method references &nbsp; / &nbsp;
+  <strong>17</strong> evaluation scenarios &nbsp; / &nbsp;
+  Expression shaped by the task
+</p>
 
 ---
 
-## Core Features
+> **No investigation, no right to speak.**<br>
+> —[Oppose Book Worship](毛泽东选集/第一卷-第二次国内革命战争时期/反对本本主义.md)
 
-### Five-Stage Process + Gate Mechanism
+MZT draws on the **standpoints, perspectives, and methods** of Mao Zedong Thought to guide an AI agent's judgment: investigate how events unfolded, understand contradictions through concrete relationships, examine the interests behind proposals, and revise conclusions in response to new evidence and practical results.
 
-MZT adopts a **five-stage process**, adding "Problem Type Judgment" before the four-capability architecture, with **Gate mechanism** forcing Agent to wait for user confirmation at key checkpoints:
+What matters is whether the agent understands the actual problem and can support its choices. The task determines the answer's length and form: a sentence, a table, a piece of code, or a detailed argument. The skill prescribes no answer sections, method quotas, or fixed internal steps.
 
-| Stage | Description | Gate |
-|-------|-------------|------|
-| **Stage 0** | Problem Type Judgment | Gate 0: Type Judgment Gate |
-| **Stage 1** | Problem Construction | Gate 1: Problem Confirmation Gate |
-| **Stage 2** | Methodology Selection | Gate 2: Direction Confirmation Gate |
-| **Stage 3** | Analysis Output | Gate 3: Report Completion Gate |
-| **Stage 4** | Verification & Iteration | - |
-| **Stage 5** | User Evaluation & Feedback | - |
+## Quick start
 
-### Problem Type Classification
-
-Agent automatically judges problem type and adopts different questioning strategies:
-
-| Type | Definition | Questioning Strategy |
-|------|------------|---------------------|
-| **Practice-oriented** | Involves user's personal decisions, resources, situations | Must ask questions |
-| **Cognitive** | Explores objective facts, historical events, universal laws | Direct analysis |
-| **Quasi-cognitive** | Appears general but can be personalized | Can answer directly, note personalization |
-| **Boundary-blurred** | Cannot be determined from the question itself | One round of questioning to determine context |
-
-### Four-Capability Architecture
-
-| Capability | Core Objective |
-|------------|----------------|
-| **Problem Construction** | Discover core contradictions, not fill checklists |
-| **Methodology Selection** | Dynamic selection, not preset mapping |
-| **Self-Reflection** | Critical thinking throughout the process |
-| **Verification & Iteration** | Practice testing, forming closed loops |
-
-### Architecture Comparison
-
-| Dimension | Old Architecture (Process Design) | New Architecture (Capability Design) |
-|-----------|-----------------------------------|--------------------------------------|
-| Entry Point | Problem type identification (10 presets) | Problem feature identification (8 dynamic dimensions) |
-| Questioning Purpose | Fill clarity checklist | Discover core contradictions |
-| Methodology | Static layering + preset mapping | Dynamic priority + on-demand selection |
-| Quality Check | Agent self-evaluation | Agent self-evaluation + User evaluation |
-| Closed Loop | None | User feedback → Pattern extraction → Knowledge crystallization |
-
----
-
-## Classic Quotes from Mao Zedong
-
-### On Contradiction Analysis
-
-> In the course of developing a complex thing, many contradictions exist, and one of them is necessarily the principal contradiction, whose existence and development determine the existence and development of other contradictions.
-
-> Of the two contradictory aspects, one must be principal and the other secondary.
-
-> Qualitatively different contradictions can only be resolved by qualitatively different methods.
-
-### On Seeking Truth from Facts
-
-> "Facts" are all the things that exist objectively, "truth" means the internal relations of objective things, and "to seek" means to study.
-
-> No investigation, no right to speak.
-
-> All conclusions are born at the end of the investigation, not at its beginning.
-
-### On Practice and Knowledge
-
-> Through practice, discover truth, and through practice, verify and develop truth.
-
-> Practice, knowledge, practice again, knowledge again—this form repeats itself in endless cycles, and with each cycle, the content of practice and knowledge rises to a higher level.
-
-### On Development Strategy
-
-> A single spark can start a prairie fire.
-
-> It is like a ship far out at sea whose masthead can already be seen from the shore; it is like the morning sun in the east whose shimmering rays are visible from a high mountain top; it is like a child about to be born moving restlessly in its mother's womb.
-
-> The object of war is not simply to annihilate the enemy but to preserve oneself while annihilating the enemy.
-
-### On Mass Line
-
-> What is a true iron wall? It is the masses, the millions upon millions who genuinely support the revolution.
-
-> From the masses, to the masses.
-
-> All the practical problems of the masses are problems we should pay attention to.
-
-### On Stance Analysis
-
-> Who are our enemies? Who are our friends? This is a question of the first importance for the revolution.
-
-> A revolutionary party is the guide of the masses, and no revolution ever fails when the party leads correctly.
-
-### On Working Methods
-
-> The method of concentrating superior forces and destroying the enemy one by one must be applied not only in the disposition of campaigns but also in the disposition of battles.
-
-> We must be determined, fear no sacrifice, surmount every difficulty, and win victory.
-
-### On Purpose and Belief
-
-> Our Communist Party and the Eighth Route and New Fourth Armies led by our Party are revolutionary armies. They are entirely for the liberation of the people and work thoroughly for the interests of the people.
-
-> To die for the people's interests is weightier than Mount Tai; to die for the fascists and for the exploiters and oppressors of the people is lighter than a feather.
-
-### On Independent Self-Reliance
-
-> We hope for foreign aid, but we cannot depend on it; we rely on our own efforts, on the creative power of the whole army and the entire people.
-
-> Self-reliance as the main factor, foreign aid as supplementary.
-
-### On United Front
-
-> Politics means making as many people as possible support us and as few people as possible oppose us.
-
-> In the united front, struggle is the means to unity, and unity is the purpose of struggle.
-
----
-
-## Installation
-
-Install using [Skills CLI](https://github.com/vercel-labs/skills):
+Install with [Skills CLI](https://github.com/vercel-labs/skills), then follow the prompts to select your agent:
 
 ```bash
-# Install to current project
-npx skills add Aurix-labs/MZT-analysis-skill
-
-# Global install for Claude Code (recommended)
-npx skills add Aurix-labs/MZT-analysis-skill -g -a claude-code
-
-# Global install for Cursor
-npx skills add Aurix-labs/MZT-analysis-skill -g -a cursor
-
-# Install to all supported agents
-npx skills add Aurix-labs/MZT-analysis-skill -g --all
+npx skills add Aurix-labs/MZT-analysis-skill --skill mzt
 ```
 
-### Project Structure
+<details>
+<summary><strong>Install globally or use a locally edited version</strong></summary>
 
-```
-MZT/
-├── mzt/                    # /mzt command
-│   ├── SKILL.md            # Core skill file
-│   ├── methodologies/      # 23 methodology files
-│   ├── configs/            # Configuration files
-│   │   ├── feature-mapping.yaml  # Problem feature-methodology mapping
-│   │   └── case-template.md      # Case record template
-│   ├── cases/              # Case library
-│   │   └── INDEX.md        # Case index
-│   └── README.md
-├── README.md
-└── README_EN.md
+Install globally for a specific agent:
+
+```bash
+# Codex
+npx skills add Aurix-labs/MZT-analysis-skill --skill mzt -g -a codex
+
+# Claude Code
+npx skills add Aurix-labs/MZT-analysis-skill --skill mzt -g -a claude-code
 ```
 
-Available commands after installation: `/mzt`, `/mzt on`, `/mzt off`
+Install the local version from the repository root:
 
-## Usage
-
-### Commands
-
-| Command | Description |
-|---------|-------------|
-| `/mzt` | Explicit analysis — Enter capability-driven analysis flow, output structured report |
-| `/mzt on` | Enable dialectical thinking mode |
-| `/mzt off` | Disable dialectical thinking mode |
-
-### Example
-
-**Explicit invocation (Practice-oriented problem)**:
-```
-User: /mzt I'm considering whether to join a startup company
-
-Agent: This is a practice-oriented problem involving your personal decision. Before starting the analysis, I need to understand: What is your current professional background and main concerns? You can answer the above question, or say "direct analysis" to skip.
-
-User: I have 5 years of backend development experience, mainly worried about the stability of startups...
-
-Agent: Let me restate the core of your problem: You are considering whether to join a startup, and the main contradiction is the trade-off between career development opportunities and stability. Is this understanding accurate?
-
-User: Problem understood
-
-Agent: [Output methodology selection, wait for confirmation]
-
-User: Direction correct
-
-Agent: [Output complete analysis report]
+```bash
+npx skills add ./mzt --skill mzt
 ```
 
-**Explicit invocation (Cognitive problem)**:
-```
-User: /mzt Why was Qin Shi Huang able to unify the six states?
+The remote commands install content published to the repository. Local edits do not automatically update the remote repository or copies already installed elsewhere. See the [Skills CLI documentation](https://github.com/vercel-labs/skills#install-a-skill) for more options.
 
-Agent: This is a cognitive problem, I will analyze it directly. [Output methodology selection, wait for confirmation before outputting complete report]
+</details>
+
+After installation, give your agent a concrete question:
+
+```text
+/mzt Analyze the dispute prompted by this draft policy.
+
+/mzt Who benefits from this rule change, and who bears the costs?
+
+/mzt Our team's delivery is getting slower. Where should we start?
 ```
 
-**Enable dialectical thinking mode**:
-```
-User: /mzt on
+| Invocation | Meaning |
+| :--- | :--- |
+| `/mzt [question]` | Apply relevant ideas to the current task |
+| `/mzt on` | Continue applying relevant ideas throughout this conversation |
+| `/mzt off` | Stop continuous guidance; one-off invocation remains available |
 
-Agent: Dialectical thinking mode enabled. I will apply Mao Zedong Thought methodologies in my reasoning process.
-```
+The host agent interprets `on/off` as a convention within the current conversation. New conversations do not inherit that state. It is not a background switch and does not change model weights; the exact invocation interface depends on the host.
+
+## Core ideas
+
+These ideas are connected and can be revisited as understanding develops. The investigation and evidence needed to support a judgment remain essential.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Investigation</h3>
+      <p>Trace the underlying problem, historical context, original claims, and relevant later developments. Check whether retelling has changed the issue under dispute.</p>
+      <a href="mzt/methodologies/06-investigation-research.md">Understand how the issue arose →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Seek truth from facts</h3>
+      <p>Distinguish facts, inferences, and assumptions. Let evidence constrain the explanation, including evidence that challenges the initial judgment.</p>
+      <a href="mzt/methodologies/02-seek-truth-from-facts.md">Ground understanding in reality →</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>Contradiction analysis</h3>
+      <p>Examine mutual dependence and constraint. Identify decisive relationships and distinguish the principal contradiction from the principal aspect within a contradiction.</p>
+      <a href="mzt/methodologies/01-contradiction-analysis.md">Find what shapes the wider situation →</a>
+    </td>
+    <td valign="top">
+      <h3>Standpoints and interests</h3>
+      <p>Investigate economic position, organizational ties, and resource dependence. Distinguish claims to represent others from institutional effects and personal motives.</p>
+      <a href="mzt/methodologies/05-class-stance-analysis.md">Place claims in their material context →</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>The mass line</h3>
+      <p>Recognize different circumstances within “ordinary people.” Draw on participants' experience to assess a proposal's opportunities, burdens, and consequences.</p>
+      <a href="mzt/methodologies/13-mass-line.md">Start with the people affected →</a>
+    </td>
+    <td valign="top">
+      <h3>Development and practice</h3>
+      <p>Examine how conditions change and how actions reshape relationships. Use actual results to revise understanding and subsequent choices.</p>
+      <a href="mzt/methodologies/03-practice-cycle.md">Test judgments through practice →</a>
+    </td>
+  </tr>
+</table>
+
+Read [SKILL.md](mzt/SKILL.md) for the full guidance, or consult the [23-method reference index](mzt/methodologies/INDEX.md) when a particular question needs closer examination.
+
+## A concrete example
+
+**A dispute over “pausing digital procurement” may begin with a decision about how to cut a public-service budget.**
+
+In a fictional evaluation scenario, a library plans to shorten opening hours at its township branches. A reader proposes postponing a new digital-system purchase instead. A critic accuses the reader of depriving township residents of digital services.
+
+Reading the budget proposal and the complete statement reveals that the new system is a different project from the existing catalogue search and online renewal services. The reader explicitly wants to preserve those services. Discussing only whether digital technology has value would miss the actual comparison between procurement and branch opening hours.
+
+Further judgment depends on concrete circumstances: who relies on evening and weekend access, what needs the new features address, whether the savings estimates hold up, and what later arrangements have actually changed. New evidence should change the judgment where relevant. A temporary procurement pause is not proof of long-term results.
+
+[Read the full scenario](mzt/evals/fixtures/15-library/index.md) · [More examples of the ideas in use](mzt/references/thought-in-use.md)
+
+These examples illustrate how the ideas can change a judgment. They are not answers to reproduce.
+
+## Evaluating MZT
+
+**Look at what the agent investigated, what supports its judgment, and whether changed evidence changes its conclusions.**
+
+The current set contains **17 scenarios**, including **3 multi-turn tasks**. They cover event investigation, interest analysis, organizational decisions, historical explanations, code, tables, brief answers, and conversation commands.
+
+| What to evaluate | Observable behavior |
+| :--- | :--- |
+| Active investigation | Reads available background and original materials to recover the problem omitted from a dispute fragment |
+| Identifying the issue | Distinguishes original claims, other people's retellings, and predicted consequences |
+| Analyzing interests | Uses verified economic ties and effects on different groups, addressing real conflicts without attributing motives through rumors |
+| Revising judgment | Accepts later clarification and counterevidence, updates affected conclusions, and retains what still holds |
+| Serving the task | Completes simple tasks directly, explains complex ones adequately, and respects the user's requested format |
+
+Coverage does not mean every scenario has passed, nor does it demonstrate reliable capability gains. Automated scripts measure only specified text properties and format constraints. Facts, causal explanations, and sources require review against the available material. Evaluation neither requests nor scores hidden chains of thought.
+
+[Evaluation scenarios](mzt/evals/evals.json) · [Rubric and evaluation protocol](mzt/evals/rubric.md)
+
+## Further reading and contributions
+
+<details>
+<summary><strong>Repository structure</strong></summary>
+
+| Path | Contents |
+| :--- | :--- |
+| [mzt/SKILL.md](mzt/SKILL.md) | Skill entrypoint and invocation conventions |
+| [mzt/methodologies/](mzt/methodologies/) | 23 method references and their index |
+| [mzt/references/](mzt/references/) | Guidance on evidence, dialogue, citation, and application |
+| [mzt/configs/](mzt/configs/) | Optional reading suggestions and case-recording guidance |
+| [mzt/cases/](mzt/cases/) | Index of cases recorded at the user's request |
+| [mzt/evals/](mzt/evals/) | Scenarios, fictional source materials, review criteria, and measurement scripts |
+| [毛泽东选集/](毛泽东选集/) | Original source and study materials |
+| [assets/readme/](assets/readme/) | README images |
+
+</details>
+
+Concrete failure cases are welcome through [Issues](https://github.com/Aurix-labs/MZT-analysis-skill/issues): include the original task, available materials, the agent's actual response, and where its judgment departed from the facts. Improvements should address judgment quality, rather than add terminology or lengthen reports.
+
+The methods originate in Mao Zedong Thought; modern applications must account for their specific circumstances. Preserve historical context, verify quotations, and avoid treating classical authority as a substitute for evidence or assigning historical friend-or-enemy categories directly to modern people and organizations.
+
+[Selected Works of Mao Zedong online](https://www.marxists.org/chinese/maozedong/index.htm) · [Agent Skills specification](https://agentskills.io) · [Citation and expression guidance](mzt/references/style-and-mindset.md)
 
 ---
 
-## Methodology System
-
-MZT contains **23 methodologies** organized in a three-layer architecture:
-
-1. **Core Methodologies**: Contradiction Analysis, Seek Truth from Facts (one required for all analysis)
-2. **Feature-Based Recommendations**: Dynamic selection based on problem features
-3. **Auxiliary Methodologies**: On-demand invocation
-
-For detailed methodology list, see [SKILL.md](mzt/SKILL.md).
-
----
-
-## Dialectical Relationships Between Methodologies
-
-Methodologies are not isolated; they exist in dialectical unity of opposites:
-
-| Methodology A | Relationship | Methodology B | Description |
-|---------------|--------------|---------------|-------------|
-| Focus Breakthrough | ↔ | Overall Coordination | Dialectical unity of concentration and distribution |
-| Independent Self-Reliance | ↔ | United Front | Dialectical unity of self-preservation and uniting others |
-| Strategic Contempt | ↔ | Tactical Seriousness | Dialectical unity of confidence and prudence |
-| Criticism | ↔ | Self-Criticism | Dialectical unity of external and internal |
-| Seek Truth from Facts | ↔ | Contradiction Analysis | Unity of objectivity and dialectics |
-
----
-
-## Structured Report Sections
-
-When explicitly invoked (`/mzt`), the output includes:
-
-1. **Problem Definition** — Core issue to be resolved (focused, precise)
-2. **Evidence Base** — Data sources, investigation process, reliability (required)
-3. **Contradiction Analysis** — Primary/secondary contradictions, transformation conditions
-4. **Objective Conditions** — Current environment and constraints
-5. **Solutions** — Proposed solutions based on analysis
-6. **Practice Verification** — How to validate and iterate solutions
-7. **Critical Reflection** — Self-questioning, limitations, improvement directions (required)
-
-### Methodology Selection Guide
-
-Choose methodology combinations based on problem type:
-
-| Problem Type | Required Methodologies | Optional Methodologies |
-|--------------|------------------------|------------------------|
-| Historical Events | Contradiction Analysis + Development Dialectics | Class Stance, Mass Line |
-| International Relations | Contradiction Analysis + Strategic Dialectics | United Front, Independent Self-Reliance |
-| Technology Development | Contradiction Analysis + Development Dialectics | Mass Line, Seek Truth from Facts |
-| Social Issues | Contradiction Analysis + Class Stance | Mass Line, Independent Self-Reliance |
-| Career Decisions | Contradiction Analysis + Independent Self-Reliance | Development Dialectics, Seek Truth from Facts |
-
----
-
-## References
-
-- [Selected Works of Mao Zedong](https://www.marxists.org/chinese/maozedong/index.htm)
-- [Agent Skills Specification](https://agentskills.io)
-- [Skills CLI](https://github.com/vercel-labs/skills)
-
----
-
-## License
-
-MIT
-
----
-
-**Let a single spark start a prairie fire across the world!**
+<p align="center">
+  <strong>Start from reality. Test through practice.</strong><br>
+  MZT · MIT
+</p>

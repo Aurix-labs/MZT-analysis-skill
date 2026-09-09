@@ -1,57 +1,59 @@
-# 问题特征-方法论映射配置
-# 用于能力二：方法论选择能力
+# 可选阅读线索，保留原文件名以便已有引用定位。
+# 这些条目不是“问题类别 -> 必选方法”的执行配置，也不是回答结构。
+# 遇到理解障碍时可以参考；不匹配、跳过、交叉阅读和放弃某个视角都有效。
+# 当前仓库没有据此自动调用方法的执行器。
 
-features:
-  - name: 利益冲突
-    description: 涉及不同群体利益分配、存在对立立场
-    recommended_methods:
-      - 阶级立场分析法
-      - 矛盾分类处理法
+purpose: optional_reading_cues
+automatic_selection: false
+required_methods: []
 
-  - name: 趋势判断
-    description: 需要分析事物发展方向、判断未来走向
-    recommended_methods:
-      - 发展辩证法
-      - 战略辩证法
+reading_cues:
+  - uncertainty: 不同现象似乎相互牵制，但尚不清楚实际关系
+    possible_references:
+      - ../methodologies/01-contradiction-analysis.md
+      - ../methodologies/21-concrete-analysis.md
+    reminder: 先理解对象和机制；材料不足时不强行命名主要矛盾。
 
-  - name: 资源分配
-    description: 涉及有限资源的优先级决策
-    recommended_methods:
-      - 聚焦突破法
-      - 统筹兼顾法
+  - uncertainty: 当前解释可能把推测或过去经验当成事实
+    possible_references:
+      - ../methodologies/02-seek-truth-from-facts.md
+      - ../methodologies/06-investigation-research.md
+    reminder: 具体事件要追查现实与历史，核对原始主张和后续变化；已有材料足够时无需重复检索。
 
-  - name: 人际关系
-    description: 涉及团队、组织、群体关系
-    recommended_methods:
-      - 群众路线法
-      - 统一战线法
+  - uncertainty: 争论中的转述可能改变了原始问题
+    possible_references:
+      - ../methodologies/06-investigation-research.md
+      - ../references/evidence-and-dialogue.md
+    reminder: 对照对象、范围、程度、条件和比较对象；论题替换与故意操纵需要不同证据。
 
-  - name: 战略决策
-    description: 涉及长期规划、重大选择
-    recommended_methods:
-      - 战略辩证法
-      - 独立自主法
-      - 灵活战略法
+  - uncertainty: 当前强弱或规模被直接用来推定长期结果
+    possible_references:
+      - ../methodologies/04-development-dialectics.md
+      - ../methodologies/09-strategic-dialectics.md
+    reminder: 转化取决于具体条件，时间和新生身份都不保证胜利。
 
-  - name: 实践验证
-    description: 需要将分析结论付诸检验
-    recommended_methods:
-      - 认识循环法
-      - 批评与自我批评法
+  - uncertainty: 表面立场遮住了各方承担的成本和约束
+    possible_references:
+      - ../methodologies/05-class-stance-analysis.md
+      - ../methodologies/13-mass-line.md
+      - ../methodologies/18-united-front.md
+    reminder: 主动查经济和组织联系、持续行动及制度效果；既不以传闻推断动机，也不回避已有利益证据。
 
-  - name: 历史视角
-    description: 需要从历史维度理解问题
-    recommended_methods:
-      - 发展辩证法
-      - 调查研究法
+  - uncertainty: 局部投入很多但整体处境没有改善
+    possible_references:
+      - ../methodologies/11-focus-breakthrough.md
+      - ../methodologies/12-overall-coordination.md
+    reminder: 理解投入怎样改变约束，同时考察支持条件和转移的代价。
 
-  - name: 问题诊断
-    description: 需要识别问题根源
-    recommended_methods:
-      - 思想纠偏法
-      - 矛盾分析法
+  - uncertainty: 计划看似自洽，却不知道什么结果会改变认识
+    possible_references:
+      - ../methodologies/03-practice-cycle.md
+      - ../methodologies/19-criticism-self-criticism.md
+    reminder: 检验围绕真实不确定性，不能为完成闭环虚构执行或反馈。
 
-# 核心方法论（所有分析必选其一）
-core_methods:
-  - 矛盾分析法
-  - 实事求是法
+  - uncertainty: 限制被视为不可改变，或努力被视为可以克服一切
+    possible_references:
+      - ../methodologies/22-subjective-initiative.md
+      - ../methodologies/17-independent-self-reliance.md
+      - ../methodologies/15-persistence.md
+    reminder: 区分现实边界和可改变条件，也允许调整目标或停止。
