@@ -2,11 +2,11 @@
   <img src="assets/readme/mao-flag.png" alt="红旗与毛泽东黑白剪影" width="280">
 </p>
 
-<h1 align="center">MZT</h1>
+<h1 align="center">MZT · 毛泽东思想与方法</h1>
 
 <p align="center">
-  <strong>毛泽东思想 · 辩证思考 Skill</strong><br>
-  让 AI 从实际出发，让判断经得起检验。
+  以毛泽东思想的立场、观点和方法，引导 AI 认识问题、形成判断。<br>
+  <strong>从实际出发，在实践中检验。</strong>
 </p>
 
 <p align="center">
@@ -16,20 +16,15 @@
 <p align="center">
   <a href="#快速开始">快速开始</a> ·
   <a href="#思想内核">思想内核</a> ·
-  <a href="#放到一个具体问题里">实际例子</a> ·
-  <a href="#怎样检验它">行为评测</a>
+  <a href="#放到一个具体问题里">实际例子</a>
 </p>
 
 <p align="center">
   <strong>23</strong> 个方法论参考 &nbsp; / &nbsp;
-  <strong>17</strong> 个评测场景 &nbsp; / &nbsp;
   按任务自然表达
 </p>
 
 ---
-
-> **没有调查，没有发言权。**<br>
-> ——[《反对本本主义》](毛泽东选集/第一卷-第二次国内革命战争时期/反对本本主义.md)
 
 MZT 将毛泽东思想中的**立场、观点与方法**整理为 AI 可以运用的指导思想：查清事情的来龙去脉，在具体关系中理解矛盾，调查主张背后的利益联系，并让新证据和实践结果修正判断。
 
@@ -86,6 +81,15 @@ npx skills add ./mzt --skill mzt
 
 ## 思想内核
 
+<p align="center">
+  <img src="assets/readme/investigation-quote.png" alt="没有调查，没有发言权。木刻风插画：毛泽东在桌前听取乡亲意见、记录调查材料" width="100%">
+</p>
+
+<p align="center">
+  <strong>“没有调查，没有发言权。”</strong><br>
+  ——毛泽东，<a href="毛泽东选集/第一卷-第二次国内革命战争时期/反对本本主义.md">《反对本本主义》</a>，1930 年
+</p>
+
 这些思想可以相互联系、往返运用。形成判断所必需的调查和证据始终不能省略。
 
 <table>
@@ -133,7 +137,7 @@ npx skills add ./mzt --skill mzt
 
 **一场关于“暂停数字化采购”的争论，起因可能是公共服务预算如何压减。**
 
-在题库的虚构案例中，图书馆准备缩短乡镇分馆开放时间。一位读者提出先暂缓新增数字系统采购，对手却批评他让乡镇居民失去数字服务。
+以一个虚构的图书馆案例为例：图书馆准备缩短乡镇分馆开放时间。一位读者提出先暂缓新增数字系统采购，对手却批评他让乡镇居民失去数字服务。
 
 查阅预算草案和完整发言后，会发现新增系统与既有目录查询、网上续借属于不同项目。读者明确主张保留后者。此时，仅讨论“数字化有没有价值”，就漏掉了真正需要比较的采购与开放服务。
 
@@ -143,23 +147,8 @@ npx skills add ./mzt --skill mzt
 
 这些例子展示思想怎样改变判断，不提供需要照搬的答案。
 
-## 怎样检验它
-
-**看它查到了什么、判断是否有依据、证据变化后是否改判。**
-
-当前题库包含 **17 个场景**，其中 **3 个是多轮任务**。覆盖事件调查、利益分析、组织决策、历史解释，以及代码、表格、简答和会话指令。
-
-| 要检验的能力 | 可观察的表现 |
-| :--- | :--- |
-| 主动调查 | 查阅可取得的背景和原始材料，恢复被争论片段省略的问题 |
-| 辨明议题 | 区分原始主张、他人转述与推测后果 |
-| 分析利益 | 使用真实经济联系和群体影响，既不回避利益冲突，也不依靠传闻归因 |
-| 修正判断 | 接受后续澄清和反证，更新受影响的结论，保留仍成立的部分 |
-| 服务任务 | 简单问题直接完成，复杂问题充分说明，遵守用户指定的形式 |
-
-题库覆盖不等于全部场景均已通过，也不证明稳定的能力提升。自动脚本只测明确的文本属性与格式约束；事实、因果和来源需要结合材料评审。评测不索取或评分隐藏思维链。
-
-[评测题库](mzt/evals/evals.json) · [评审标准与运行说明](mzt/evals/rubric.md)
+> **你要知道梨子的滋味，你就得变革梨子，亲口吃一吃。**<br>
+> ——毛泽东，[《实践论》](毛泽东选集/第一卷-第二次国内革命战争时期/实践论.md)，1937 年
 
 ## 继续阅读与参与
 
@@ -173,7 +162,6 @@ npx skills add ./mzt --skill mzt
 | [mzt/references/](mzt/references/) | 证据、对话、引用和应用说明 |
 | [mzt/configs/](mzt/configs/) | 可选阅读线索与案例记录说明 |
 | [mzt/cases/](mzt/cases/) | 按用户请求整理的案例索引 |
-| [mzt/evals/](mzt/evals/) | 评测题、虚构材料、评审标准和测量脚本 |
 | [毛泽东选集/](毛泽东选集/) | 思想来源与原文学习资料 |
 | [assets/readme/](assets/readme/) | README 图片资源 |
 
@@ -183,11 +171,10 @@ npx skills add ./mzt --skill mzt
 
 方法来自毛泽东思想，现代应用需要结合具体条件。保留历史语境，核对引用，不以经典权威替代事实，也不把历史敌友身份直接套给现代个人与组织。
 
-[毛泽东选集在线版](https://www.marxists.org/chinese/maozedong/index.htm) · [Agent Skills 规范](https://agentskills.io) · [引用与表达说明](mzt/references/style-and-mindset.md)
+[毛泽东选集在线版](https://www.marxists.org/chinese/maozedong/index.htm) · [Agent Skills 规范](https://agentskills.io) · [引用与表达说明](mzt/references/style-and-mindset.md) · [配图与引文说明](assets/readme/ARTWORK.md)
 
 ---
 
 <p align="center">
-  <strong>从实际出发，在实践中检验。</strong><br>
-  MZT · MIT
+  <img src="assets/readme/spark-quote.png" alt="星星之火，可以燎原。木刻风题图：油灯、书卷、红旗与田野" width="100%">
 </p>

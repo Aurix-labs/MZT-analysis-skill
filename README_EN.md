@@ -2,11 +2,11 @@
   <img src="assets/readme/mao-flag.png" alt="A red flag and a black-and-white silhouette of Mao Zedong" width="280">
 </p>
 
-<h1 align="center">MZT</h1>
+<h1 align="center">MZT · Mao Zedong Thought and Methods</h1>
 
 <p align="center">
-  <strong>Mao Zedong Thought · Dialectical Thinking Skill</strong><br>
-  Help AI start from concrete facts and make judgments that can be tested.
+  <strong>Use the standpoints, perspectives, and methods of Mao Zedong Thought to help AI understand problems and form judgments.</strong><br>
+  Start from reality. Test through practice.
 </p>
 
 <p align="center">
@@ -16,20 +16,15 @@
 <p align="center">
   <a href="#quick-start">Quick start</a> ·
   <a href="#core-ideas">Core ideas</a> ·
-  <a href="#a-concrete-example">In practice</a> ·
-  <a href="#evaluating-mzt">Evaluation</a>
+  <a href="#a-concrete-example">In practice</a>
 </p>
 
 <p align="center">
   <strong>23</strong> method references &nbsp; / &nbsp;
-  <strong>17</strong> evaluation scenarios &nbsp; / &nbsp;
   Expression shaped by the task
 </p>
 
 ---
-
-> **No investigation, no right to speak.**<br>
-> —[Oppose Book Worship](毛泽东选集/第一卷-第二次国内革命战争时期/反对本本主义.md)
 
 MZT draws on the **standpoints, perspectives, and methods** of Mao Zedong Thought to guide an AI agent's judgment: investigate how events unfolded, understand contradictions through concrete relationships, examine the interests behind proposals, and revise conclusions in response to new evidence and practical results.
 
@@ -86,6 +81,14 @@ The host agent interprets `on/off` as a convention within the current conversati
 
 ## Core ideas
 
+<p align="center">
+  <img src="assets/readme/investigation-quote.png" alt="Mao listening to rural residents and the quotation: No investigation, no right to speak" width="100%">
+</p>
+
+<p align="center">
+  <sub>“No investigation, no right to speak.” — <a href="毛泽东选集/第一卷-第二次国内革命战争时期/反对本本主义.md">Oppose Book Worship</a> (1930)</sub>
+</p>
+
 These ideas are connected and can be revisited as understanding develops. The investigation and evidence needed to support a judgment remain essential.
 
 <table>
@@ -133,7 +136,7 @@ Read [SKILL.md](mzt/SKILL.md) for the full guidance, or consult the [23-method r
 
 **A dispute over “pausing digital procurement” may begin with a decision about how to cut a public-service budget.**
 
-In a fictional evaluation scenario, a library plans to shorten opening hours at its township branches. A reader proposes postponing a new digital-system purchase instead. A critic accuses the reader of depriving township residents of digital services.
+In a fictional library example, a library plans to shorten opening hours at its township branches. A reader proposes postponing a new digital-system purchase instead. A critic accuses the reader of depriving township residents of digital services.
 
 Reading the budget proposal and the complete statement reveals that the new system is a different project from the existing catalogue search and online renewal services. The reader explicitly wants to preserve those services. Discussing only whether digital technology has value would miss the actual comparison between procurement and branch opening hours.
 
@@ -143,23 +146,8 @@ Further judgment depends on concrete circumstances: who relies on evening and we
 
 These examples illustrate how the ideas can change a judgment. They are not answers to reproduce.
 
-## Evaluating MZT
-
-**Look at what the agent investigated, what supports its judgment, and whether changed evidence changes its conclusions.**
-
-The current set contains **17 scenarios**, including **3 multi-turn tasks**. They cover event investigation, interest analysis, organizational decisions, historical explanations, code, tables, brief answers, and conversation commands.
-
-| What to evaluate | Observable behavior |
-| :--- | :--- |
-| Active investigation | Reads available background and original materials to recover the problem omitted from a dispute fragment |
-| Identifying the issue | Distinguishes original claims, other people's retellings, and predicted consequences |
-| Analyzing interests | Uses verified economic ties and effects on different groups, addressing real conflicts without attributing motives through rumors |
-| Revising judgment | Accepts later clarification and counterevidence, updates affected conclusions, and retains what still holds |
-| Serving the task | Completes simple tasks directly, explains complex ones adequately, and respects the user's requested format |
-
-Coverage does not mean every scenario has passed, nor does it demonstrate reliable capability gains. Automated scripts measure only specified text properties and format constraints. Facts, causal explanations, and sources require review against the available material. Evaluation neither requests nor scores hidden chains of thought.
-
-[Evaluation scenarios](mzt/evals/evals.json) · [Rubric and evaluation protocol](mzt/evals/rubric.md)
+> **To know the taste of a pear, you must change it by tasting it yourself.**<br>
+> —Mao Zedong, [On Practice](毛泽东选集/第一卷-第二次国内革命战争时期/实践论.md), 1937 (project translation)
 
 ## Further reading and contributions
 
@@ -173,7 +161,6 @@ Coverage does not mean every scenario has passed, nor does it demonstrate reliab
 | [mzt/references/](mzt/references/) | Guidance on evidence, dialogue, citation, and application |
 | [mzt/configs/](mzt/configs/) | Optional reading suggestions and case-recording guidance |
 | [mzt/cases/](mzt/cases/) | Index of cases recorded at the user's request |
-| [mzt/evals/](mzt/evals/) | Scenarios, fictional source materials, review criteria, and measurement scripts |
 | [毛泽东选集/](毛泽东选集/) | Original source and study materials |
 | [assets/readme/](assets/readme/) | README images |
 
@@ -183,11 +170,10 @@ Concrete failure cases are welcome through [Issues](https://github.com/Aurix-lab
 
 The methods originate in Mao Zedong Thought; modern applications must account for their specific circumstances. Preserve historical context, verify quotations, and avoid treating classical authority as a substitute for evidence or assigning historical friend-or-enemy categories directly to modern people and organizations.
 
-[Selected Works of Mao Zedong online](https://www.marxists.org/chinese/maozedong/index.htm) · [Agent Skills specification](https://agentskills.io) · [Citation and expression guidance](mzt/references/style-and-mindset.md)
+[Selected Works of Mao Zedong online](https://www.marxists.org/chinese/maozedong/index.htm) · [Agent Skills specification](https://agentskills.io) · [Citation and expression guidance](mzt/references/style-and-mindset.md) · [Artwork and quotation notes](assets/readme/ARTWORK.md)
 
 ---
 
 <p align="center">
-  <strong>Start from reality. Test through practice.</strong><br>
-  MZT · MIT
+  <img src="assets/readme/spark-quote.png" alt="A single spark can start a prairie fire — an original woodcut-style illustration with books, an oil lamp, and red flags" width="100%">
 </p>
