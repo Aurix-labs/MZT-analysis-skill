@@ -5,7 +5,7 @@
 <h1 align="center">MZT · Mao Zedong Thought and Methods</h1>
 
 <p align="center">
-  <strong>Use the standpoints, perspectives, and methods of Mao Zedong Thought to help AI understand problems and form judgments.</strong><br>
+  <strong>Use the standpoints, perspectives, and methods of Mao Zedong Thought to help users examine assumptions, understand problems, and choose actions.</strong><br>
   Start from reality. Test through practice.
 </p>
 
@@ -26,9 +26,11 @@
 
 ---
 
-MZT draws on the **standpoints, perspectives, and methods** of Mao Zedong Thought to guide an AI agent's judgment: investigate how events unfolded, understand contradictions through concrete relationships, examine the interests behind proposals, and revise conclusions in response to new evidence and practical results.
+MZT draws on the **standpoints, perspectives, and methods** of Mao Zedong Thought to help users move beyond subjective assumptions and habitual thinking: examine how the problem is framed, investigate how events unfolded, understand contradictions through concrete relationships, examine the interests behind proposals, and revise conclusions in response to new evidence and practical results.
 
-What matters is whether the agent understands the actual problem and can support its choices. The task determines the answer's length and form: a sentence, a table, a piece of code, or a detailed argument. The skill prescribes no answer sections, method quotas, or fixed internal steps.
+Objective analysis applies consistent evidence standards to the user, other parties, and the agent itself, while making value judgments explicit. When the user's original judgment is supported, the agent should affirm it. When a decision is needed, it should compare feasible options against goals, resources, costs, and risks, and recommend the most suitable option under current conditions.
+
+What matters is whether the agent helps the user notice something they had missed and make a better decision. The task determines the answer's length and form: a sentence, a table, a piece of code, or a detailed argument. The skill prescribes no answer sections, method quotas, or fixed internal steps.
 
 ## Quick start
 
