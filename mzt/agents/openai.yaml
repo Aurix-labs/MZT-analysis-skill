@@ -1,0 +1,2 @@
+interface:
+  default_prompt: "$mzt 请结合当前问题的事实、约束与证据帮助我判断。"
